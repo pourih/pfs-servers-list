@@ -1,10 +1,10 @@
 vless://44c83e4b-e35d-4bbe-8e69-56bbd8a366d3@194.182.79.209:18411?security=&type=grpc&serviceName=ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed%3D2048&encryption=none#PFS-209P18411-Good%20%23%23Point%3A51
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.95:8880?security=&type=grpc&encryption=none#PFS-095P8880-Good%20%23%23Point%3A41
-vless://9aed32d7-3556-48a4-95f8-e82dcc2e1b54@57.128.178.253:443?security=tls&sni=en.linceedab.com&alpn=http/1.1&fp=safari&type=tcp&encryption=none#PFS-253P443-Good%20%23%23Point%3A39
+vless://9aed32d7-3556-48a4-95f8-e82dcc2e1b54@57.128.178.253:443?security=tls&sni=en.linceedab.com&alpn=http/1.1&fp=safari&type=tcp&encryption=none#PFS-253P443-Good%20%23%23Point%3A40
+vless://588f094b-431b-422c-b80b-007945037072@95.164.47.60:443?security=tls&sni=de02.abvpn.ru&type=ws&path=/websocket&host=de02.abvpn.ru&encryption=none#PFS-060P443-Good%20%23%23Point%3A39
 vless://9e8c4793-f653-4839-9b8b-852496ef0e27@194.182.79.7:19123?security=&type=grpc&serviceName=ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed%3D2048&encryption=none#PFS-007P19123-Good%20%23%23Point%3A38
-vless://588f094b-431b-422c-b80b-007945037072@95.164.47.60:443?security=tls&sni=de02.abvpn.ru&type=ws&path=/websocket&host=de02.abvpn.ru&encryption=none#PFS-060P443-Good%20%23%23Point%3A37
 vless://e4824193-4f54-453b-d037-88368e85ef0e@45.82.251.165:8880?security=&sni=pqh35v3.gym35fit.shop&type=grpc&encryption=none#PFS-165P8880-Good%20%23%23Point%3A35
-vless://588f094b-431b-422c-b80b-007945037072@150.241.101.16:443?security=tls&sni=de09.abvpn.ru&allowInsecure=1&fp=chrome&type=ws&path=/websocket&host=de09.abvpn.ru&encryption=none#PFS-016P443-Good%20%23%23Point%3A30
+vless://588f094b-431b-422c-b80b-007945037072@150.241.101.16:443?security=tls&sni=de09.abvpn.ru&allowInsecure=1&fp=chrome&type=ws&path=/websocket&host=de09.abvpn.ru&encryption=none#PFS-016P443-Good%20%23%23Point%3A33
 vless://588f094b-431b-422c-b80b-007945037072@46.226.162.42:443?security=tls&sni=gbr01.abvpn.ru&fp=chrome&type=ws&path=/websocket&encryption=none#PFS-042P443-Good%20%23%23Point%3A29
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.78:8880?security=&type=grpc&encryption=none#PFS-078P8880-Good%20%23%23Point%3A21
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.70:8880?security=&type=grpc&encryption=none#PFS-070P8880-Good%20%23%23Point%3A21
