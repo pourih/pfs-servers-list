@@ -1,6 +1,8 @@
-# PFS - Public Free Servers
+# PFS - Proxy Finding System
 
-A regularly updated list of tested free VLESS and Shadowsocks servers.
+`pfs_servers.txt` is a regularly updated list of tested and ranked free VLESS and Shadowsocks proxy servers.
+
+`pfs_core.py` is the Python program that performs the tests `pfs_servers.txt` and ranks the servers inside the file.
 
 ## Subscription Link
 
