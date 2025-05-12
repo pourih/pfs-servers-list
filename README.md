@@ -1,4 +1,4 @@
-# PFS - Proxy Finding System
+# PFS - Proxy Finder System
 
 `pfs_servers.txt` is a regularly updated list of tested and ranked free VLESS and Shadowsocks proxy servers.
 
