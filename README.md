@@ -5,7 +5,7 @@ It includes support for various protocols (VLESS, VMess, Shadowsocks, Trojan) an
 
 ## Subscription Link
 
-Use this link in your compatible proxy client:
+Use this link in your proxy client:
 `https://raw.githubusercontent.com/pourih/pfs-servers-list/refs/heads/main/pfs_servers.txt`
 
 ---
