@@ -9,9 +9,9 @@ https://raw.githubusercontent.com/pourih/pfs-servers-list/refs/heads/main/pfs_se
 
 ## What is PFS?
 
-PFS (Proxy Finder System) provides a **continuously updated and meticulously tested list of free proxy servers**. If you're looking for reliable ways to access the internet, this list is designed to save you time and frustration.
+PFS (Proxy Finder System) provides a continuously updated and meticulously tested list of free proxy servers. If you're looking for reliable ways to access the internet, this list is designed to save you time and frustration.
 
-## Key Features & Benefits:
+## Key Features:
 
 *   **Always Fresh:** Our automated system regularly discovers, tests, and refreshes the server list, ensuring you have access to currently working options.
 *   **Multi-Protocol Support:** The list includes servers supporting a variety of popular protocols (like VLESS, VMess, Shadowsocks, and Trojan), giving you flexibility.
