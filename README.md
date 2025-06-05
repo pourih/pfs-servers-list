@@ -11,8 +11,6 @@ https://raw.githubusercontent.com/pourih/pfs-servers-list/refs/heads/main/pfs_se
 
 PFS (Proxy Finder System) provides a **continuously updated and meticulously tested list of free proxy servers**. If you're looking for reliable ways to access the internet, this list is designed to save you time and frustration.
 
-Forget manually searching for and testing countless servers – PFS does the heavy lifting for you!
-
 ## Key Features & Benefits:
 
 *   **Always Fresh:** Our automated system regularly discovers, tests, and refreshes the server list, ensuring you have access to currently working options.
@@ -25,11 +23,6 @@ Forget manually searching for and testing countless servers – PFS does the hea
 *   **Geo-Location Aware:** Where possible, servers are tagged with their geographic location, helping you choose servers in specific regions.
 *   **Smart De-duplication:** We work to minimize redundant entries, providing a cleaner, more diverse list.
 *   **Continuous Improvement:** The system includes mechanisms to archive consistently failing servers and re-evaluate potentially good ones, ensuring the list's quality over time.
-
-## Who is this for?
-
-*   **General Users:** If you use proxy clients (like v2rayN, Nekoray, Clash, etc.) and want a reliable, "just works" list of servers to import, PFS is for you. Simply add the subscription link above to your client.
-*   **Developers & Tech Enthusiasts:** If you're building applications or tools that require proxy access, this curated list can serve as a valuable, pre-vetted resource. You can appreciate the automated testing and ranking that goes into maintaining its quality.
 
 ## How to Use:
 
