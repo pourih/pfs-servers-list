@@ -1,4 +1,4 @@
-# PFS: Proxy Finder System
+# PFS (Proxy Finder System)
 
 **Get the Regularly Updated Server List for Your Proxy Client:**
 ```
