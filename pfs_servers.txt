@@ -1,7 +1,6 @@
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiMjU3MjdkZi0xNWVhLTQ1M2MtYTAwNi0xM2ZlOThmZWUxZDI=@141.164.63.32:30936#%F0%9F%A5%87%20PFS%20%F0%9F%87%B0%F0%9F%87%B7%20%5B1007%20KB/s%5D%20-%20%23P%3A58
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXc3R1U25sdTRpZUE5TTBM@admin.c2.webramz.co:443#%F0%9F%A5%88%20PFS%20%F0%9F%87%AC%F0%9F%87%A7%20%5B325%20KB/s%5D%20-%20%23P%3A28
 vless://e23e3004-1526-4d6d-b207-8cf7f48f2c1a@77.110.116.32:45467?security=reality&flow=xtls-rprx-vision&sni=google.com&type=tcp&fp=chrome&pbk=0H0YVyZWNBDzLnsusXo5kEBqEOmcACOJ0Snb0gQA-kw&sid=6d5bf19a#%F0%9F%A5%89%20PFS%20%F0%9F%87%A6%F0%9F%87%B9%20%5B369%20KB/s%5D%20-%20%23P%3A25
-vless://432e1e8b-18ce-488f-8203-2ba54b2fb61f@104.21.21.31:443?path=%2Fswordnewnewnew&security=tls&encryption=none&host=us.cishanjichang.me&fp=chrome&type=ws&sni=us.cishanjichang.me#PFS%20%F0%9F%87%BA%F0%9F%87%B8%20-%20%23P%3A25%20%23E%3A1
 vless://7e296434-2d17-48d3-928d-19eaa34aecb1@162.19.249.240:28495?security=reality&sni=dl.google.com&type=tcp&fp=chrome&pbk=KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ&sid=0ecc2c1392#PFS%20%F0%9F%87%A9%F0%9F%87%AA%20%5B568%20KB/s%5D%20-%20%23P%3A22
 vless://34acc61e-d63a-4f0f-abb4-73d57ae63611@162.159.20.126:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&security=&encryption=none&host=v2ngfast.nanvrfood.ir.&type=httpupgrade#PFS%20%F0%9F%87%BA%F0%9F%87%B8%20%5B889%20KB/s%5D%20-%20%23P%3A13
 ss://YWVzLTI1Ni1nY206VEc6QEVua2VsdGVfbm90aWYmJlRHOkBOb3RpZl9DaGF0@116.206.124.41:34045#PFS%20%F0%9F%87%B9%F0%9F%87%AD%20%5B417%20KB/s%5D%20-%20%23P%3A13
