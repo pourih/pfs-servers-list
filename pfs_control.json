@@ -1,5 +1,5 @@
 {
-  "enable_push": true,
-  "stop_after_cycle": true,
+  "enable_push": false,
+  "stop_after_cycle": false,
   "pause_execution": false
 }
