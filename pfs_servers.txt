@@ -1,12 +1,12 @@
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.17.147.22:80?encryption=none&security=none&type=ws&host=redfree8mahsang6.redfree8.ir&path=%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560#PFS%20Special%2027
-vless://432e1e8b-18ce-488f-8203-2ba54b2fb61f@104.21.21.31:443?encryption=none&security=tls&sni=us.cishanjichang.me&fp=chrome&type=ws&host=us.cishanjichang.me&path=%2Fswordnewnewnew#PFS%20Special%2026
+vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.17.147.22:80?encryption=none&security=none&type=ws&host=redfree8mahsang6.redfree8.ir&path=%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560#PFS%20Special%2027%20%E2%AD%90
+vless://432e1e8b-18ce-488f-8203-2ba54b2fb61f@104.21.21.31:443?encryption=none&security=tls&sni=us.cishanjichang.me&fp=chrome&type=ws&host=us.cishanjichang.me&path=%2Fswordnewnewnew#PFS%20Special%2026%20%E2%AD%90%E2%AD%90
 vless://e4629e61-7709-4869-bbde-0385e0201003@93.127.181.13:600?encryption=none&security=tls&sni=iransoft98.blog&alpn=h3%2Ch2%2Chttp%2F1.1&fp=firefox&type=tcp&headerType=none#PFS%20Special%2025
-vless://b55ec078-3b17-4ed1-a697-71f464cdcaaa@172.67.11.138:80?encryption=none&security=none&type=ws&host=kssepa.sabzipolobamahi.dpdns.org&path=%2F%3Fed%3D2560#PFS%20Special%2024
+vless://b55ec078-3b17-4ed1-a697-71f464cdcaaa@172.67.11.138:80?encryption=none&security=none&type=ws&host=kssepa.sabzipolobamahi.dpdns.org&path=%2F%3Fed%3D2560#PFS%20Special%2024%20%E2%AD%90
 vless://6a0de64e-39e3-46a7-a8bc-89f4888560e2@37.202.224.194:14258?encryption=none&security=none&type=tcp&headerType=none#PFS%20Special%2023
 vless://abf6cbe0-8776-4b03-8e08-a7f8da202f12@89.32.250.83:8443?encryption=none&security=none&type=tcp&headerType=none#PFS%20Special%2022
 vless://1a7104a1-fcf1-4b31-9b47-3eab42cef30f@193.151.131.115:6030?encryption=none&security=none&type=tcp&headerType=none#PFS%20Special%2021
 vless://b41d5ac0-ed33-47cd-84c5-406471554f5d@193.151.131.170:15015?encryption=none&security=none&type=tcp&headerType=none#PFS%20Special%2020
-vless://0067ad9a-7dc8-215c-4af9-62648743c931@92.38.145.145:443?encryption=none&security=tls&sni=swe.foldandflyhigh.com&type=ws&host=swe.foldandflyhigh.com&path=%2F#PFS%20Special%2019
+vless://0067ad9a-7dc8-215c-4af9-62648743c931@92.38.145.145:443?encryption=none&security=tls&sni=swe.foldandflyhigh.com&type=ws&host=swe.foldandflyhigh.com&path=%2F#PFS%20Special%2019%20%E2%AD%90
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@209.46.30.213:8880?encryption=none&security=none&sni=jp.laoyoutiao.link&type=ws&host=jp.laoyoutiao.link&path=%2F#PFS%20Special%2018
 vless://730f02b4-a187-4498-b3fa-9e9f1dccf47c@86.38.214.53:8880?encryption=none&security=none&type=httpupgrade&host=dl1.mcinet.xyz.&path=%2F#PFS%20Special%2017
 vless://730f02b4-a187-4498-b3fa-9e9f1dccf47c@104.239.72.254:8880?encryption=none&security=none&type=httpupgrade&host=dl1.mcinet.xyz.&path=%2F#PFS%20Special%2016
@@ -23,5 +23,5 @@ vless://acff92c5-701c-41e9-b905-c1e18fdd6b77@104.21.12.158:443?encryption=none&s
 vless://1ae544de-4b19-4bd0-a7d6-e47e2e19a057@itmi-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=itgetsbetter.org&alpn=http%2F1.1&fp=chrome&pbk=u13aSU1om7Mc67RxQHmVQx7iALWAUCn_j38zQ5LpYXc&sid=462c73aef9f448&type=tcp&headerType=none#PFS%20Special%205
 vless://b97b8288-82fb-4a90-b4a1-1e36ab9988c7@172.67.86.123:443?encryption=none&security=tls&sni=divine-surf-b984.princess310.workers.dev&fp=random&type=ws&host=divine-surf-b984.princess310.workers.dev&path=%2F%3Fed%3D2560#PFS%20Special%204
 vless://730f02b4-a187-4498-b3fa-9e9f1dccf47c@103.133.1.19:8880?encryption=none&security=none&type=httpupgrade&host=dl1.mcinet.xyz.&path=%2F#PFS%20Special%203
-vless://432e1e8b-18ce-488f-8203-2ba54b2fb61f@172.67.196.8:443?encryption=none&security=tls&sni=us.cishanjichang.me&type=ws&host=us.cishanjichang.me&path=%2Fswordnewnewnew#PFS%20Special%202
+vless://432e1e8b-18ce-488f-8203-2ba54b2fb61f@172.67.196.8:443?encryption=none&security=tls&sni=us.cishanjichang.me&type=ws&host=us.cishanjichang.me&path=%2Fswordnewnewnew#PFS%20Special%202%20%E2%AD%90
 vless://1ae544de-4b19-4bd0-a7d6-e47e2e19a057@72.146.232.154:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=itgetsbetter.org&alpn=http%2F1.1&fp=chrome&pbk=u13aSU1om7Mc67RxQHmVQx7iALWAUCn_j38zQ5LpYXc&sid=462c73aef9f448&type=tcp&headerType=none#PFS%20Special%201
