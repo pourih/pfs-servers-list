@@ -1,3 +1,4 @@
+vless://b41d5ac0-ed33-47cd-84c5-406471554f5d@193.151.131.170:15015?encryption=none&security=none&type=tcp&headerType=none#PFS%20Special%2020
 vless://0067ad9a-7dc8-215c-4af9-62648743c931@92.38.145.145:443?encryption=none&security=tls&sni=swe.foldandflyhigh.com&type=ws&host=swe.foldandflyhigh.com&path=%2F#PFS%20Special%2019
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@209.46.30.213:8880?encryption=none&security=none&sni=jp.laoyoutiao.link&type=ws&host=jp.laoyoutiao.link&path=%2F#PFS%20Special%2018
 vless://730f02b4-a187-4498-b3fa-9e9f1dccf47c@86.38.214.53:8880?encryption=none&security=none&type=httpupgrade&host=dl1.mcinet.xyz.&path=%2F#PFS%20Special%2017
