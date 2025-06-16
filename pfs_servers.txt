@@ -1,3 +1,6 @@
+vless://49d4b99d-7d99-416a-9778-2c75d79100bb@172.66.47.92:443?encryption=none&security=tls&sni=Work-YUU00.pageS.dEv&fp=chrome&type=ws&host=Work-YUU00.pageS.dEv&path=%2F#PFS%20Special%2032
+vless://ebd0e266-3aef-4149-827e-6f96070fef59@188.114.96.3:443?encryption=none&security=tls&sni=gNiSI3b45fAsx27vsp90KpLU4W3a3awY.KiAnHonarFAR31.WOrKers.deV&alpn=http%2F1.1&fp=randomized&type=ws&host=gnisi3b45fasx27vsp90kplu4w3a3awy.kianhonarfar31.workers.dev&path=%2FU3mPPbJNj103FAcN%3Fed%3D2560#PFS%20Special%2031
+vless://bc99a2aa-e094-4add-a969-9e72c97efd06@45.159.219.124:443?encryption=none&security=tls&sni=calm-bonus-748d.jixosey717.workers.dev&alpn=h3%2Ch2&fp=chrome&type=ws&host=calm-bonus-748d.jixosey717.workers.dev&path=%2F%3Fed%3D2048#PFS%20Special%2030
 vless://89f3d070-f727-46d3-995e-3f8c6bd59558@104.21.10.89:443?encryption=none&security=tls&sni=TESTaLi.mEHDiAMA279.WOrKErs.Dev&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=testali.mehdiama279.workers.dev&path=%2F9fL9nkMsx6315cc9%3Fed%3D2560#PFS%20Special%2029
 vless://97f20a92-c2dc-4cb8-a5cb-5878b29e2e00@46.38.144.161:2052?encryption=none&security=none&type=ws&path=%2F#PFS%20Special%2028
 vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.17.147.22:80?encryption=none&security=none&type=ws&host=redfree8mahsang6.redfree8.ir&path=%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560#PFS%20Special%2027
