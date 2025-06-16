@@ -1,3 +1,4 @@
+vless://7dc035ac-6d78-4df3-963e-13102fb92176@5.202.8.211:443?encryption=none&security=tls&sni=r12.irlancer.ir&type=ws&path=%2F#PFS%20Special%2037
 vless://a4e63b50-47c4-476f-a75b-9df4c71c4e3b@tgrns3.bidaplay.ir:8080?encryption=none&security=none&type=ws&path=%2F#PFS%20Special%2036
 vless://2a7b6666-d93f-4015-aa29-60cfe0a2d724@2.188.224.76:24341?encryption=none&security=none&type=ws&path=%2F#PFS%20Special%2035
 vless://bc99a2aa-e094-4add-a969-9e72c97efd06@172.66.167.201:443?encryption=none&security=tls&sni=calm-bonus-748d.jixosey717.workers.dev&alpn=h3%2Ch2&fp=chrome&type=ws&host=calm-bonus-748d.jixosey717.workers.dev&path=%2F%3Fed%3D2048#PFS%20Special%2034
