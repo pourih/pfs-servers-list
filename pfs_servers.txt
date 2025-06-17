@@ -1,3 +1,5 @@
+vless://3b90b947-711b-7ff6-5154-91950dabf947@85.133.206.235:38?encryption=none&security=none&type=ws&path=%2F#PFS%20Special%2041
+vless://a5e5714c-047d-47b3-ae7c-593fa7863954@81.28.12.12:80?encryption=none&security=none&type=ws&host=pronkdems.com&path=%2Fpronk#PFS%20Special%2040
 vless://c2d0f344-6c19-4d58-875f-adb1622beeee@185.213.167.190:9090?encryption=none&security=none&type=tcp&headerType=none#PFS%20Special%2039
 vless://a80274e2-ff42-48b7-9817-41a5b56e0c72@networknim.cam:34927?encryption=none&security=none&type=tcp&headerType=none#PFS%20Special%2038
 vless://7dc035ac-6d78-4df3-963e-13102fb92176@5.202.8.211:443?encryption=none&security=tls&sni=r12.irlancer.ir&type=ws&path=%2F#PFS%20Special%2037
