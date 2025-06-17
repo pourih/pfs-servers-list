@@ -1,3 +1,4 @@
+vless://c2d0f344-6c19-4d58-875f-adb1622beeee@185.213.167.190:9090?encryption=none&security=none&type=tcp&headerType=none#PFS%20Special%2039
 vless://a80274e2-ff42-48b7-9817-41a5b56e0c72@networknim.cam:34927?encryption=none&security=none&type=tcp&headerType=none#PFS%20Special%2038
 vless://7dc035ac-6d78-4df3-963e-13102fb92176@5.202.8.211:443?encryption=none&security=tls&sni=r12.irlancer.ir&type=ws&path=%2F#PFS%20Special%2037
 vless://a4e63b50-47c4-476f-a75b-9df4c71c4e3b@tgrns3.bidaplay.ir:8080?encryption=none&security=none&type=ws&path=%2F#PFS%20Special%2036
