@@ -1,3 +1,4 @@
+vless://fcc6b47d-6824-408f-8d4c-38d7def9738d@185.191.77.6:443?encryption=none&security=tls&sni=office1001.avaoffice.cloud&type=ws&path=%2F#PFS%20Special%2043
 vless://5d19d8d8-d0c8-4ea0-b86e-082030397ebc@85.133.221.46:6010?encryption=none&security=reality&sni=traffic-tile.maps.snapp.ir&fp=firefox&pbk=OCW4VToUh_2gtej7iO30chCKwUWDmmmpW01kHE4BDwU&sid=7fcf499c88f80777&type=tcp&headerType=none#PFS%20Special%2042
 vless://3b90b947-711b-7ff6-5154-91950dabf947@85.133.206.235:38?encryption=none&security=none&type=ws&path=%2F#PFS%20Special%2041
 vless://a5e5714c-047d-47b3-ae7c-593fa7863954@81.28.12.12:80?encryption=none&security=none&type=ws&host=pronkdems.com&path=%2Fpronk#PFS%20Special%2040
