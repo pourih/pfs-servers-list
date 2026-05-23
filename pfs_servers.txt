@@ -1,5 +1,9 @@
 vless://394f6981-a782-4779-9a85-e6cf22935d93@152.233.28.198:8443?encryption=none&security=tls&sni=uk1.fromblancwithlove.com&alpn=h2&insecure=1&allowInsecure=1&type=tcp&headerType=none#PFS%20%7C%20England%20Datacamp
+vless://394f6981-a782-4779-9a85-e6cf22935d93@152.233.35.228:8443?encryption=none&security=tls&sni=de1.fromblancwithlove.com&insecure=0&allowInsecure=0&type=tcp&headerType=none#PFS%20%7C%20Germany%20Datacamp
 trojan://humanity@188.114.96.3:443?security=tls&sni=www.creationlong.org&insecure=1&allowInsecure=1&type=ws&host=www.creationlong.org&path=%2Fassignment#PFS%20%7C%20Poland%20Scaleway
-vless://d511e429-e32b-46a7-ac07-a0fffa9b634c@144.31.235.62:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.deepl.com&pbk=ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU&sid=0123456789abcdef&type=tcp&headerType=none#PFS%20%7C%20Sweden%20Play2go
 trojan://humanity@188.114.96.3:443?security=tls&sni=www.gossipglove.com&insecure=0&allowInsecure=0&type=ws&host=www.gossipglove.com&path=%2Fassignment#PFS%20%7C%20France%20Scaleway
+vless://20ae58df-d562-40b3-908c-21b4881315d4@18.143.151.84:38967?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.icloud.com&fp=firefox&pbk=TFAGMtH1LB503O0SJadbPxBs8S_LACshWQpEIAyuS1g&sid=9b1cdc34dd5664&type=tcp&headerType=none#PFS%20%7C%20Singapore%20Amazon
+vless://d511e429-e32b-46a7-ac07-a0fffa9b634c@144.31.235.62:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.deepl.com&pbk=ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU&sid=0123456789abcdef&type=tcp&headerType=none#PFS%20%7C%20Sweden%20Play2go
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTczMWVjMy1mOGUxLTQzZjYtOTJjZi0zOTc4ZDE0NzA1YzQ@r3mrcg007147vhp.cybervena.com:50099?#PFS%20%7C%20Taiwan%20Data
+vless://696915f2-5ad4-452b-987c-d83d29d0503a@85.192.49.174:443?encryption=none&security=reality&sni=fi.moktana.app&pbk=zz1etKRzRA4fwe0Te0p6jAlHorNJs4mmcljA3oL520E&sid=dfe3b09582689d40&type=grpc&authority=&serviceName=xyz&mode=gun#PFS%20%7C%20Finland%20H2nexus
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ@119.59.127.129:990?#PFS%20%7C%20Thailand%20Metrabyte
