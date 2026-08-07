@@ -1,4 +1,10 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPQ@147.15.42.184:59319
-vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.212.215:62145?encryption=none&security=none&type=tcp&headerType=none#Colombia%20%7C%20Oracle%20%7C%20215%20%28clean%29
-vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@149.130.187.58:62145?encryption=none&security=none&type=tcp&headerType=none#Colombia%20%7C%20Oracle%20%7C%2058%20%28clean%29
-vless://a2aa7759-ddac-4d02-bf9d-de62cbff9481@104.171.132.232:2200?encryption=none&security=none&type=ws&host=rzd.ru&path=%2Fv1#Russia%20%7C%20TimeWeb%20%7C%20232%20%28clean%29
+vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@92.5.231.50:62145?security=none&type=tcp#vless-300751351
+vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@149.130.178.238:62145?security=none&type=tcp#vless-300751384
+vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.236.11:62145?security=none&type=tcp#vless-300751382
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPQ@137.131.223.233:59319
+vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.212.215:62145?security=none&type=tcp#vless-293468275
+vless://9194bade-099b-4723-9f19-606edb5aeab8@64.176.55.120:443?flow=xtls-rprx-vision&fp=chrome&pbk=-Xqm17XFjFPUHutSnpMNOlrqlT1pJfKuHT003dU3aks&security=reality&sid=06&sni=shop-us-en.amd.com&type=tcp#vless-299162401
+vless://d3602a60-a687-44b1-b969-35cdba049520@66.245.221.145:443?flow=xtls-rprx-vision&fp=chrome&pbk=X9el1W5IPIWDYLIFmOBHYeUk6J17ZPe2T_BerTBI_18&security=reality&sid=0b&sni=www.amazon.com&type=tcp#vless-300751399
+vless://23eaa47c-e54a-4ea9-b75a-92835863a0a3@64.176.43.163:443?flow=xtls-rprx-vision&fp=chrome&pbk=3_EcaGWGxJluoPja5IIZeCf2bBwur7cuEGR74itgHyU&security=reality&sid=f641d171&sni=www.amazon.com&type=tcp#vless-300751366
+vmess://eyJhZGQiOiIxMzAuMzMuODkuMjAxIiwiYWlkIjowLCJob3N0IjoiYWpheC5taWNyb3NvZnQuY29tIiwiaWQiOiJhNmFiNjUxMy02ZWMzLTMyN2YtYTA2OC1iODlmZTcyOTU0YjgiLCJuZXQiOiJ3cyIsInBhdGgiOiIvaGxzL2NjdHY1cGhkLm0zdTgiLCJwb3J0IjoiMzY4MDEiLCJwcyI6InZtZXNzLTI5NTI1MDkzNyIsInNuaSI6ImFqYXgubWljcm9zb2Z0LmNvbSIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
+vless://bceda826-c83c-45d0-891e-15c4bfec76bc@104.171.134.235:4100?host=live.ok.ru&path=%2Fv1&security=none&type=ws#67.%20%F0%9F%87%BA%F0%9F%87%B8%20United%20States
