@@ -2,4 +2,3 @@ vless://e586c19d-2f64-4a11-8f13-a21186ce6cca@157.22.176.96:3001?security=reality
 vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.231.73:62145?security=none&type=tcp#vless-419557353
 vless://ae9bcc43-5fd8-4891-b06e-1c93e2747ed9@45.74.178.41:719?encryption=none&type=ws&path=%2Fapi%2Fv2%2Fxtrnwqjbkr%3Fed%3D2560&host=play.google.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20680651
 vless://caec0d8d-ab2f-4247-b97d-7fb1a34ab195@182.16.61.2:45647?alpn=http%2F1.1&security=none&type=tcp#vless-385532783
-vless://431fe973-a43a-4fac-bf83-2a772e0d0625@182.16.61.4:45647?encryption=none&security=none&type=tcp&headerType=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20751606
