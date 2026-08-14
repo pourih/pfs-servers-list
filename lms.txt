@@ -1,9 +1,7 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.140:443#v2go%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20SS%20%7C%20658
 vless://b6c29ae7-4748-4049-b642-b695c0d2c776@191.44.118.250:2053?encryption=none&flow=xtls-rprx-vision&fp=&pbk=E6u2RbffXIPvia5v5iIZVj6U_VpSBWmGTsHHNtH-5Rg&security=reality&sid=417063feab794131&sni=vk.ru&type=tcp#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20488217
-vless://218fd696-e3a2-4c33-b397-a5f13a82969e@94.156.155.27:443?fp=firefox&host=www.telekom.de&path=%2F&pbk=bY0-zlTOPCaEWDMw_BTzuzJW513tl6Hc61n4Z-q1cHE&security=reality&sid=8f892fa1&sni=www.telekom.de&type=tcp#vless-488165304
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@54.36.174.140:443#v2go%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20SS%20%7C%20658
 vless://7595cd50-9326-48e4-a7bc-802e85e643ec@162.19.156.14:6800?security=reality&type=tcp&sni=play.google.com&fp=qq&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&encryption=none#v2go%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20VLESS%20%7C%20757
-vless://431fe973-a43a-4fac-bf83-2a772e0d0625@182.16.61.4:45647?encryption=none&security=none&type=tcp&headerType=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20751606
 vless://caec0d8d-ab2f-4247-b97d-7fb1a34ab195@182.16.61.2:45647?alpn=http%2F1.1&security=none&type=tcp#vless-385532783
-vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@185.140.12.160:2053?security=reality&type=tcp&sni=vk.ru&fp=firefox&flow=xtls-rprx-vision&sid=a6bbc4aecf5d961f&pbk=6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs#%F0%9F%87%A9%F0%9F%87%AA%20%7C%20%40WhiteDNS%20%7C%20DE125%7C1.0MB%2Fs%7CDNSOK%7CGPT%E2%81%BA-DE%7CGM-DE%7CCL-DE%7CSP-DE
+vless://431fe973-a43a-4fac-bf83-2a772e0d0625@182.16.61.4:45647?encryption=none&security=none&type=tcp&headerType=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20751606
 vless://37a098ab-8fec-4352-8ee8-294ae5bca68f@193.233.126.82:9443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=Te5lrfzw_MytTzQJB92DhWw7fk1qTK3mhzz7Bz41gVc&security=reality&sid=0240e83f65a25e&sni=www.amd.com&type=tcp#114.%20%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands
 vless://86c50e3a-5b87-49dd-bd20-03c7f2735e40@104.21.76.231:2095?security=none&type=ws&path=%2F&host=nmslfangbinxing.pusytroller.gq#%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%40WhiteDNS%20%7C%20US113%7C1.5MB%2Fs%7CDNSOK%7CGPT%E2%81%BA-US%7CGM-US%7CCL-US
