@@ -1,0 +1,37 @@
+name: Sync text file from upstream
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # every day at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_URL: https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt
+      TARGET_FILE: verified.txt
+
+    steps:
+      - name: Check out your repo
+        uses: actions/checkout@v4
+
+      - name: Download the source file
+        run: |
+          mkdir -p "$(dirname "$TARGET_FILE")"
+          curl -fsSL "$SOURCE_URL" -o "$TARGET_FILE"
+
+      - name: Commit and push if the file changed
+        run: |
+          if [ -n "$(git status --porcelain -- "$TARGET_FILE")" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add "$TARGET_FILE"
+            git commit -m "Sync $TARGET_FILE from upstream"
+            git push
+          else
+            echo "No changes upstream."
+          fi
