@@ -14,6 +14,7 @@ jobs:
     env:
       SOURCE_URL: https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt
       TARGET_FILE: verified.txt
+      SECOND_FILE: pfs_servers.txt
 
     steps:
       - name: Check out your repo
@@ -23,13 +24,14 @@ jobs:
         run: |
           mkdir -p "$(dirname "$TARGET_FILE")"
           curl -fsSL "$SOURCE_URL" -o "$TARGET_FILE"
+          cp "$TARGET_FILE" "$SECOND_FILE"
 
       - name: Commit and push if the file changed
         run: |
-          if [ -n "$(git status --porcelain -- "$TARGET_FILE")" ]; then
+          if [ -n "$(git status --porcelain -- "$TARGET_FILE" "$SECOND_FILE")" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add "$TARGET_FILE"
+            git add "$TARGET_FILE" "$SECOND_FILE"
             git commit -m "Sync $TARGET_FILE from upstream"
             git push
           else
