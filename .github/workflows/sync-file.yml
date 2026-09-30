@@ -2,7 +2,7 @@ name: Sync text file from upstream
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # every day at 06:00 UTC
+    - cron: "7,37 * * * *"   # every 30 min (at :07 and :37 UTC), off the :00/:30 peaks
   workflow_dispatch:
 
 permissions:
