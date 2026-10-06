@@ -12,7 +12,9 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     env:
-      SOURCE_URL: https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt
+      SOURCE_URLS: |
+        https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt
+        https://github.com/R3ZARAHIMI/tg-v2ray-configs-every2h/raw/refs/heads/main/Original-Configs.txt
       TARGET_FILE: verified.txt
       SECOND_FILE: pfs_servers.txt
 
@@ -20,10 +22,69 @@ jobs:
       - name: Check out your repo
         uses: actions/checkout@v4
 
-      - name: Download the source file
+      - name: Download and merge the source files
         run: |
           mkdir -p "$(dirname "$TARGET_FILE")"
-          curl -fsSL "$SOURCE_URL" -o "$TARGET_FILE"
+          tmp="$(mktemp -d)"
+
+          # Download every source; any failed download fails the job (nothing gets committed)
+          while IFS= read -r url; do
+            [ -z "$url" ] && continue
+            curl -fsSL "$url" -o "$tmp/current.txt"
+            cat "$tmp/current.txt" >> "$tmp/all.txt"
+            echo >> "$tmp/all.txt"   # guard against a missing trailing newline
+          done <<< "$SOURCE_URLS"
+
+          # Deduplicate by host+port (first occurrence wins, order kept)
+          python3 - "$tmp/all.txt" > "$tmp/merged.txt" <<'PY'
+          import sys, base64, json
+          from urllib.parse import urlsplit
+
+          def pad(b):
+              return b + "=" * (-len(b) % 4)
+
+          def key(line):
+              # Change this function to alter what counts as a duplicate.
+              scheme, sep, rest = line.partition("://")
+              scheme = scheme.lower()
+              body = rest.split("#")[0].split("?")[0]
+              try:
+                  if sep and scheme == "vmess":
+                      j = json.loads(base64.b64decode(pad(body)))
+                      return ("addr", str(j["add"]).strip().lower(), str(j["port"]).strip())
+                  if sep and scheme == "ss" and "@" not in body:
+                      # legacy format: ss://base64(method:pass@host:port)
+                      dec = base64.urlsafe_b64decode(pad(body)).decode()
+                      host, _, port = dec.rsplit("@", 1)[1].rpartition(":")
+                      return ("addr", host.strip("[]").lower(), port)
+                  if sep:
+                      u = urlsplit(line)
+                      if u.hostname and u.port:
+                          return ("addr", u.hostname.lower(), str(u.port))
+              except Exception:
+                  pass
+              return ("raw", line)  # unparseable: fall back to exact-line match
+
+          seen = set()
+          with open(sys.argv[1], encoding="utf-8", errors="replace") as f:
+              for line in f:
+                  line = line.strip()
+                  if not line:
+                      continue
+                  k = key(line)
+                  if k in seen:
+                      continue
+                  seen.add(k)
+                  print(line)
+          PY
+
+          # Safety check: never overwrite the files with an empty result
+          if [ ! -s "$tmp/merged.txt" ]; then
+            echo "Merged result is empty; aborting." >&2
+            exit 1
+          fi
+
+          cp "$tmp/merged.txt" "$TARGET_FILE"
           cp "$TARGET_FILE" "$SECOND_FILE"
 
       - name: Commit and push if the file changed
