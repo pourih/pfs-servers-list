@@ -28,7 +28,7 @@ proxies:
   - {"name": "🌐سرور 12 | Meh-21| MTSRVRS", "type": "vless", "server": "2a06:98c1:3121::7", "port": 443, "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5", "udp": true, "tls": true, "servername": "snip.edgeoneai.cc.cd", "client-fingerprint": "chrome", "alpn": ["http/1.1"], "network": "ws", "ws-opts": {"path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI", "headers": {"Host": "snip.edgeoneai.cc.cd"}}}
   - {"name": "🌐سرور 18 | Meh-21| MTSRVRS", "type": "vless", "server": "eng0.khovanski.mom", "port": 2053, "uuid": "ace33fb8-c593-4b17-8f72-f3359b6e9638", "udp": true, "flow": "xtls-rprx-vision", "tls": true, "servername": "eng0.khovanski.mom", "client-fingerprint": "firefox", "reality-opts": {"public-key": "372lhUM0WJWBCShaAu0u3JGvIqCWGvBRRXQyjsAHt0Q", "short-id": "685ffe8ade96f0b2"}, "network": "tcp"}
   - {"name": "🌐سرور 19 | Meh-21| MTSRVRS", "type": "vless", "server": "104.143.219.17", "port": 3090, "uuid": "5995e686-a3ae-4c05-a739-4a4466b69697", "udp": true, "network": "grpc", "grpc-opts": {"grpc-service-name": "vless"}}
-  - {"name": "🌐سرور 20 | Meh-21| MTSRVRS", "type": "ss", "server": "ico.org.uk", "port": 2087, "cipher": "�M", "password": "y���n���8s����~w7Ӈx�M�", "udp": true}
+  - {"name": "🌐سرور 20 | Meh-21| MTSRVRS", "type": "ss", "server": "ico.org.uk", "port": 2087, "cipher": "�M", "password": "y���n���8s����~w\u007f7Ӈx�M�", "udp": true}
   - {"name": "🌐سرور 25 | Meh-21| MTSRVRS", "type": "ss", "server": "e156.velqixa.ir", "port": 37223, "cipher": "chacha20-ietf-poly1305", "password": "_xJuKfyAseakcwmOPeKW4g", "udp": true}
   - {"name": "🌐سرور 32 | Meh-21| MTSRVRS", "type": "vless", "server": "157.228.128.59", "port": 443, "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8", "udp": true, "flow": "xtls-rprx-vision", "tls": true, "servername": "addons.mozilla.org", "client-fingerprint": "chrome", "reality-opts": {"public-key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws", "short-id": "06e00e7c"}, "network": "tcp"}
   - {"name": "🌐سرور 33 | Meh-21| MTSRVRS", "type": "vless", "server": "206.245.146.248", "port": 2085, "uuid": "ec553e40-bd11-44fc-91ba-284fe7264706", "udp": true, "network": "grpc", "grpc-opts": {"grpc-service-name": "vless"}}
@@ -120,14 +120,14 @@ proxies:
   - {"name": "api.apira98.org:23324", "type": "ss", "server": "api.apira98.org", "port": 23324, "cipher": "��z׍���t��4鿼מ�}�zsW�٧�", "password": "", "udp": true}
   - {"name": "api.apira98.org:57132", "type": "ss", "server": "api.apira98.org", "port": 57132, "cipher": "��z׍���t��4鿼מ�}�zsW�٧�", "password": "", "udp": true}
   - {"name": "93.89.220.37:443", "type": "ss", "server": "93.89.220.37", "port": 443, "cipher": "��^ٶ��ow��<wO�m�~uݴw^��w�", "password": "", "udp": true}
-  - {"name": "50.7.216.174:443", "type": "ss", "server": "50.7.216.174", "port": 443, "cipher": "շZ٧���}��;ӏ��>��4��ۆ�", "password": "", "udp": true}
+  - {"name": "50.7.216.174:443", "type": "ss", "server": "50.7.216.174", "port": 443, "cipher": "շZ٧���}��;ӏ��>��4\u007f��ۆ�", "password": "", "udp": true}
   - {"name": "45.88.12.152:2083", "type": "ss", "server": "45.88.12.152", "port": 2083, "cipher": "�����|���o�4�_�����NZwG7o�u", "password": "", "udp": true}
   - {"name": "103.126.51.58:995", "type": "ss", "server": "103.126.51.58", "port": 995, "cipher": "��9�w��[o�8w��y���]�s�\u001c��", "password": "", "udp": true}
   - {"name": "ansooyefilter-telegram.arshia-nova.ir:443", "type": "ss", "server": "ansooyefilter-telegram.arshia-nova.ir", "port": 443, "cipher": "�޼y����}��\u001c���mƾw�w���o��", "password": "", "udp": true}
-  - {"name": "fr5.wizard.select:443", "type": "ss", "server": "fr5.wizard.select", "port": 443, "cipher": "٧\u001c߾6��z��u_��M�k}��}���Z", "password": "", "udp": true}
-  - {"name": "146.75.57.111:443", "type": "ss", "server": "146.75.57.111", "port": 443, "cipher": "ٶ���z�f���\u001b�Ͻ�~s���[iι", "password": "", "udp": true}
-  - {"name": "no-lim2.nomush.ir:443", "type": "ss", "server": "no-lim2.nomush.ir", "port": 443, "cipher": "��_�ޞ�޼��=���f�k�x�F�ѯv", "password": "", "udp": true}
-  - {"name": "179.254.166.40:443", "type": "ss", "server": "179.254.166.40", "port": 443, "cipher": "�_\u001c�~]��}��5w���~���}֛�", "password": "", "udp": true}
+  - {"name": "fr5.wizard.select:443", "type": "ss", "server": "fr5.wizard.select", "port": 443, "cipher": "٧\u001c߾6��z��u\u007f_��M�k}��}���Z", "password": "", "udp": true}
+  - {"name": "146.75.57.111:443", "type": "ss", "server": "146.75.57.111", "port": 443, "cipher": "ٶ���z�f���\u001b�Ͻ�\u007f~s���[iι", "password": "", "udp": true}
+  - {"name": "no-lim2.nomush.ir:443", "type": "ss", "server": "no-lim2.nomush.ir", "port": 443, "cipher": "��_�ޞ�޼��=\u007f���f�k�x�F�ѯv", "password": "", "udp": true}
+  - {"name": "179.254.166.40:443", "type": "ss", "server": "179.254.166.40", "port": 443, "cipher": "�_\u001c�~]��}��5w\u007f���~���}֛�\u007f", "password": "", "udp": true}
   - {"name": "23.81.36.148:1222", "type": "ss", "server": "23.81.36.148", "port": 1222, "cipher": "ߧ7u�6�^���8�ϛ�����{�yi��", "password": "", "udp": true}
   - {"name": "fr.song69.fun:28150", "type": "ss", "server": "fr.song69.fun", "port": 28150, "cipher": "�O\u001c�W��ݸ��<�ߛk��߆�������", "password": "", "udp": true}
   - {"name": "p.maxiko.ir:2086", "type": "ss", "server": "p.maxiko.ir", "port": 2086, "cipher": "�5�|��\u001c��\u001e���׆��~�㗸u�\u001f", "password": "", "udp": true}
@@ -139,8 +139,8 @@ proxies:
   - {"name": "iptamiz2.chipsomast.ir:443", "type": "ss", "server": "iptamiz2.chipsomast.ir", "port": 443, "cipher": "�׹}�\u001b��{�5k��{���\u001ek�]}��", "password": "", "udp": true}
   - {"name": "iptamiz2.pafaktalaei.ir:443", "type": "ss", "server": "iptamiz2.pafaktalaei.ir", "port": 443, "cipher": "�׹}�\u001b��{�5k��{���\u001ek�]}��", "password": "", "udp": true}
   - {"name": "177.1.192.74:443", "type": "ss", "server": "177.1.192.74", "port": 443, "cipher": "��9٧���v��5i��i�~�ƸѮ���\u001d", "password": "", "udp": true}
-  - {"name": "193.70.85.96:443", "type": "ss", "server": "193.70.85.96", "port": 443, "cipher": "������N;��_����k�\u001fk�\u001a�^", "password": "", "udp": true}
-  - {"name": "7q4eiwcseu-193708596-direct.rahbarii.com:443", "type": "ss", "server": "7q4eiwcseu-193708596-direct.rahbarii.com", "port": 443, "cipher": "������N;��_����k�\u001fk�\u001a�^", "password": "", "udp": true}
+  - {"name": "193.70.85.96:443", "type": "ss", "server": "193.70.85.96", "port": 443, "cipher": "������N;��_����k�\u001fk�\u001a\u007f�^", "password": "", "udp": true}
+  - {"name": "7q4eiwcseu-193708596-direct.rahbarii.com:443", "type": "ss", "server": "7q4eiwcseu-193708596-direct.rahbarii.com", "port": 443, "cipher": "������N;��_����k�\u001fk�\u001a\u007f�^", "password": "", "udp": true}
   - {"name": "144.31.171.200:443", "type": "ss", "server": "144.31.171.200", "port": 443, "cipher": "�^������_��4�ϼ�ξw��u�\u001a{��", "password": "", "udp": true}
   - {"name": "213.21.232.230:443", "type": "ss", "server": "213.21.232.230", "port": 443, "cipher": "�^������_��4�ϼ�ξw��u�\u001a{��", "password": "", "udp": true}
   - {"name": "87.121.47.114:443", "type": "ss", "server": "87.121.47.114", "port": 443, "cipher": "�^������_��4�ϼ�ξw��u�\u001a{��", "password": "", "udp": true}
@@ -155,10 +155,10 @@ proxies:
   - {"name": "49.13.231.249:33483", "type": "ss", "server": "49.13.231.249", "port": 33483, "cipher": "�\u001a��Z��]��8�o���>��v�ƺ��\u001e", "password": "", "udp": true}
   - {"name": "cdn-waw.edgeptr.org:8080", "type": "ss", "server": "cdn-waw.edgeptr.org", "port": 8080, "cipher": "��<�]y��t��;}����~{��۾\\}��", "password": "", "udp": true}
   - {"name": "91.107.162.52:443", "type": "ss", "server": "91.107.162.52", "port": 443, "cipher": "��[߷7�_{��\u001ekϛշ~�_]�M�{�|", "password": "", "udp": true}
-  - {"name": "91.233.8.141:443", "type": "ss", "server": "91.233.8.141", "port": 443, "cipher": "�W|����\\��7{��{��sG�u�]���", "password": "", "udp": true}
-  - {"name": "s3.bamans.uk:443", "type": "ss", "server": "s3.bamans.uk", "port": 443, "cipher": "�4�ޞ��{{�4����}�}�^�=׶�", "password": "", "udp": true}
+  - {"name": "91.233.8.141:443", "type": "ss", "server": "91.233.8.141", "port": 443, "cipher": "�W|\u007f����\\��7{��{��sG�u�]���", "password": "", "udp": true}
+  - {"name": "s3.bamans.uk:443", "type": "ss", "server": "s3.bamans.uk", "port": 443, "cipher": "�4�ޞ��{{�4����}�}�^\u007f�=׶�", "password": "", "udp": true}
   - {"name": "104.19.138.1:443", "type": "ss", "server": "104.19.138.1", "port": 443, "cipher": "�\u001e�n��ݞ��\u001d矛m�~{�_s�z徵", "password": "", "udp": true}
-  - {"name": "188.114.98.6:2095", "type": "ss", "server": "188.114.98.6", "port": 2095, "cipher": "��{�<�N���;�߽�;q��Ӟ��\u001e", "password": "", "udp": true}
+  - {"name": "188.114.98.6:2095", "type": "ss", "server": "188.114.98.6", "port": 2095, "cipher": "��{�<�N���;�߽�;q��Ӟ��\u007f\u001e", "password": "", "udp": true}
   - {"name": "centerbeam.proxy.rlwy.net:30391", "type": "ss", "server": "centerbeam.proxy.rlwy.net", "port": 30391, "cipher": "��=�^��v��\u001f�O�}�~�G|}�<�mv", "password": "", "udp": true}
   - {"name": "bettermoode.beautishine.ir:48234", "type": "ss", "server": "bettermoode.beautishine.ir", "port": 48234, "cipher": "�mZ�o=�w���\u001e���}�~�n�u״��", "password": "", "udp": true}
   - {"name": "193.29.139.234:8080", "type": "ss", "server": "193.29.139.234", "port": 8080, "cipher": "chacha20-ietf-poly1305", "password": "4a2rfixophdjffa8KVA4Aa", "udp": true}
@@ -177,32 +177,32 @@ proxies:
   - {"name": "soso.sonstep.ir:14357", "type": "ss", "server": "soso.sonstep.ir", "port": 14357, "cipher": "chacha20-poly1305", "password": "8qdRGce3T6uHAw0s7yLNL9sFe/1vtQlX3S1bogYrqlQ=", "udp": true}
   - {"name": "83.166.235.114:443", "type": "ss", "server": "83.166.235.114", "port": 443, "cipher": "k^������z��\u001dyϼs���~���\u001a�\u001a", "password": "", "udp": true}
   - {"name": "fastifylightspeedcach.beautishine.ir:4433", "type": "ss", "server": "fastifylightspeedcach.beautishine.ir", "port": 4433, "cipher": "k�9�ͻ�����\u001f���v�㎞so\u001a���", "password": "", "udp": true}
-  - {"name": "212.100.171.154:443", "type": "ss", "server": "212.100.171.154", "port": 443, "cipher": "k�\u001e�F������\u001eo�o��m�\u001f��\u001bӟ[", "password": "", "udp": true}
+  - {"name": "212.100.171.154:443", "type": "ss", "server": "212.100.171.154", "port": 443, "cipher": "k�\u001e�F������\u001eo\u007f�o��m�\u001f��\u001bӟ[", "password": "", "udp": true}
   - {"name": "fert1qswdfegrthy.localip.ir:2087", "type": "ss", "server": "fert1qswdfegrthy.localip.ir", "port": 2087, "cipher": "k�[����v��=sO�w�~ѧx�n\u001e��\u001d", "password": "", "udp": true}
   - {"name": "fert6.localip.ir:2087", "type": "ss", "server": "fert6.localip.ir", "port": 2087, "cipher": "k�[����v��=sO�w�~ѧx�n\u001e��\u001d", "password": "", "udp": true}
   - {"name": "ops4asfseretuiyk.localip.ir:2087", "type": "ss", "server": "ops4asfseretuiyk.localip.ir", "port": 2087, "cipher": "k�[����v��=sO�w�~ѧx�n\u001e��\u001d", "password": "", "udp": true}
   - {"name": "ops5788tugfuy.localip.ir:2087", "type": "ss", "server": "ops5788tugfuy.localip.ir", "port": 2087, "cipher": "k�[����v��=sO�w�~ѧx�n\u001e��\u001d", "password": "", "udp": true}
   - {"name": "87.242.95.150:8448", "type": "ss", "server": "87.242.95.150", "port": 8448, "cipher": "i�\u001fi�����s�;q���~m�Zӿ{��\u001a", "password": "", "udp": true}
-  - {"name": "31.77.114.114:443", "type": "ss", "server": "31.77.114.114", "port": 443, "cipher": "i�5�����\u001co�=����^w�\\�__", "password": "", "udp": true}
-  - {"name": "nl-1.wizard.select:443", "type": "ss", "server": "nl-1.wizard.select", "port": 443, "cipher": "o]|}�\u001a��w��u_��M�k}��}���Z", "password": "", "udp": true}
-  - {"name": "2.26.231.218:2063", "type": "ss", "server": "2.26.231.218", "port": 2063, "cipher": "o_\u001d��t�ޞo�9��ξ��\u001e�}��", "password": "", "udp": true}
-  - {"name": "144.31.165.102:443", "type": "ss", "server": "144.31.165.102", "port": 443, "cipher": "o_w�o<�����\u001f_����y֞i�}�Λ", "password": "", "udp": true}
+  - {"name": "31.77.114.114:443", "type": "ss", "server": "31.77.114.114", "port": 443, "cipher": "i�5�����\u001co�=�\u007f��\u007f�^w�\\�__", "password": "", "udp": true}
+  - {"name": "nl-1.wizard.select:443", "type": "ss", "server": "nl-1.wizard.select", "port": 443, "cipher": "o]|}�\u001a��w��u\u007f_��M�k}��}���Z", "password": "", "udp": true}
+  - {"name": "2.26.231.218:2063", "type": "ss", "server": "2.26.231.218", "port": 2063, "cipher": "o_\u001d��t�ޞo�9��ξ��\u001e\u007f�}��", "password": "", "udp": true}
+  - {"name": "144.31.165.102:443", "type": "ss", "server": "144.31.165.102", "port": 443, "cipher": "o_w�o<�����\u001f\u007f_����y֞i�}�Λ", "password": "", "udp": true}
   - {"name": "toping.zovip2.ir:443", "type": "ss", "server": "toping.zovip2.ir", "port": 443, "cipher": "of�������w�;q����~k}�{g�{ݵ", "password": "", "udp": true}
   - {"name": "fastip.zabidat.ir:443", "type": "ss", "server": "fastip.zabidat.ir", "port": 443, "cipher": "o����y��wo�\u001f}ߛ�׾���o��k^Z", "password": "", "udp": true}
   - {"name": "fl.purchasemarketing.com:443", "type": "ss", "server": "fl.purchasemarketing.com", "port": 443, "cipher": "o����y��wo�\u001f}ߛ�׾���o��k^Z", "password": "", "udp": true}
-  - {"name": "144.31.238.115:2443", "type": "ss", "server": "144.31.238.115", "port": 2443, "cipher": "o�_��t����\u001c��y��w��禸��6", "password": "", "udp": true}
-  - {"name": "ger.kilashin6.site:5007", "type": "ss", "server": "ger.kilashin6.site", "port": 5007, "cipher": "s~t��{�~", "password": "�\u001eiϽ�~y��i�5�5", "udp": true}
-  - {"name": "cayosh.fastshot.net:443", "type": "ss", "server": "cayosh.fastshot.net", "port": 443, "cipher": "s�}oN<����\u001ds��W~ߞ��G}o��", "password": "", "udp": true}
-  - {"name": "www.comoiran.ir:443", "type": "ss", "server": "www.comoiran.ir", "port": 443, "cipher": "s�z��\u001b�����\u001b����>sm�㶺���", "password": "", "udp": true}
+  - {"name": "144.31.238.115:2443", "type": "ss", "server": "144.31.238.115", "port": 2443, "cipher": "o�_��t���\u007f�\u001c��y��w��禸��6", "password": "", "udp": true}
+  - {"name": "ger.kilashin6.site:5007", "type": "ss", "server": "ger.kilashin6.site", "port": 5007, "cipher": "s~t��{�~", "password": "\u007f�\u001eiϽ�~y��i�5�5", "udp": true}
+  - {"name": "cayosh.fastshot.net:443", "type": "ss", "server": "cayosh.fastshot.net", "port": 443, "cipher": "s�}oN<���\u007f�\u001ds��\u007fW~ߞ��G}o��", "password": "", "udp": true}
+  - {"name": "www.comoiran.ir:443", "type": "ss", "server": "www.comoiran.ir", "port": 443, "cipher": "s�z��\u001b�����\u001b�\u007f���>sm�㶺���", "password": "", "udp": true}
   - {"name": "185.22.153.40:8443", "type": "ss", "server": "185.22.153.40", "port": 8443, "cipher": "sޟ��^��|k�4����~�\u001b�ݴ��t", "password": "", "udp": true}
   - {"name": "31.76.65.196:8443", "type": "ss", "server": "31.76.65.196", "port": 8443, "cipher": "sޟ��^��|k�4i����~�\u001b�ݴ��t", "password": "", "udp": true}
   - {"name": "no.cnd.uk.1.mediasync-api.com:8443", "type": "ss", "server": "no.cnd.uk.1.mediasync-api.com", "port": 8443, "cipher": "w_\u001fwΝ��w��<u���>�]9k}u���", "password": "", "udp": true}
-  - {"name": "169.40.42.104:443", "type": "ss", "server": "169.40.42.104", "port": 443, "cipher": "w�\\s^\u001c��w�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
-  - {"name": "169.40.42.133:443", "type": "ss", "server": "169.40.42.133", "port": 443, "cipher": "w�\\s^\u001c��w�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
-  - {"name": "169.40.42.168:443", "type": "ss", "server": "169.40.42.168", "port": 443, "cipher": "w�\\s^\u001c��w�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
-  - {"name": "169.40.42.16:443", "type": "ss", "server": "169.40.42.16", "port": 443, "cipher": "w�\\s^\u001c��w�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
-  - {"name": "169.40.42.231:443", "type": "ss", "server": "169.40.42.231", "port": 443, "cipher": "w�\\s^\u001c��w�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
-  - {"name": "169.40.42.90:443", "type": "ss", "server": "169.40.42.90", "port": 443, "cipher": "w�\\s^\u001c��w�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
+  - {"name": "169.40.42.104:443", "type": "ss", "server": "169.40.42.104", "port": 443, "cipher": "w�\\s^\u001c��w\u007f�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
+  - {"name": "169.40.42.133:443", "type": "ss", "server": "169.40.42.133", "port": 443, "cipher": "w�\\s^\u001c��w\u007f�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
+  - {"name": "169.40.42.168:443", "type": "ss", "server": "169.40.42.168", "port": 443, "cipher": "w�\\s^\u001c��w\u007f�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
+  - {"name": "169.40.42.16:443", "type": "ss", "server": "169.40.42.16", "port": 443, "cipher": "w�\\s^\u001c��w\u007f�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
+  - {"name": "169.40.42.231:443", "type": "ss", "server": "169.40.42.231", "port": 443, "cipher": "w�\\s^\u001c��w\u007f�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
+  - {"name": "169.40.42.90:443", "type": "ss", "server": "169.40.42.90", "port": 443, "cipher": "w�\\s^\u001c��w\u007f�\u001f{o�ۭ���9�5�_\\", "password": "", "udp": true}
   - {"name": "18.133.41.17:22223", "type": "ss", "server": "18.133.41.17", "port": 22223, "cipher": "{�u��5�Gyk�6m���������NZy�^", "password": "", "udp": true}
   - {"name": "52.47.157.249:22223", "type": "ss", "server": "52.47.157.249", "port": 22223, "cipher": "{�u��5�Gyk�6m���������NZy�^", "password": "", "udp": true}
   - {"name": "52.47.180.233:22223", "type": "ss", "server": "52.47.180.233", "port": 22223, "cipher": "{�u��5�Gyk�6m���������NZy�^", "password": "", "udp": true}
@@ -213,14 +213,14 @@ proxies:
   - {"name": "195.133.80.152:443", "type": "ss", "server": "195.133.80.152", "port": 443, "cipher": "y�|w_<�^\u001cs�5��y�~�G�i�zwM�", "password": "", "udp": true}
   - {"name": "88.151.197.213:443", "type": "ss", "server": "88.151.197.213", "port": 443, "cipher": "y�|w_<�^\u001cs�5��y�~�G�i�zwM�", "password": "", "udp": true}
   - {"name": "sw1.hidenet.xyz:8443", "type": "ss", "server": "sw1.hidenet.xyz", "port": 8443, "cipher": "y��w�|��7{�\u001d���s��s��w�{��y", "password": "", "udp": true}
-  - {"name": "tg1.cdnphotos.org:443", "type": "ss", "server": "tg1.cdnphotos.org", "port": 443, "cipher": "N\u001cs�t�����\u001a���q�~ߞ�u��wx", "password": "", "udp": true}
-  - {"name": "scores-api.lovkisport.blog:443", "type": "ss", "server": "scores-api.lovkisport.blog", "port": 443, "cipher": "}tkε��\u001a��\u001f���u���Mt��\u001cwF�", "password": "", "udp": true}
-  - {"name": "video-origin.lovkisport.blog:443", "type": "ss", "server": "video-origin.lovkisport.blog", "port": 443, "cipher": "}tkε��\u001a��\u001f���u���Mt��\u001cwF�", "password": "", "udp": true}
-  - {"name": "185.200.199.75:8444", "type": "ss", "server": "185.200.199.75", "port": 8444, "cipher": "�^��������\u001f����־w��w�\\�}=", "password": "", "udp": true}
-  - {"name": "31.57.157.54:8080", "type": "ss", "server": "31.57.157.54", "port": 8080, "cipher": "���{��=��6׏�y�~�F��}ׇ�", "password": "", "udp": true}
-  - {"name": "87.58.204.60:443", "type": "ss", "server": "87.58.204.60", "port": 443, "cipher": "�\u001b��u��xk�\u001a珚y���y�4ٯ\u001e", "password": "", "udp": true}
+  - {"name": "tg1.cdnphotos.org:443", "type": "ss", "server": "tg1.cdnphotos.org", "port": 443, "cipher": "\u007fN\u001cs�t�����\u001a���q�~ߞ�u��w\u007fx", "password": "", "udp": true}
+  - {"name": "scores-api.lovkisport.blog:443", "type": "ss", "server": "scores-api.lovkisport.blog", "port": 443, "cipher": "\u007f}tkε��\u001a��\u001f���u���Mt��\u001cwF�", "password": "", "udp": true}
+  - {"name": "video-origin.lovkisport.blog:443", "type": "ss", "server": "video-origin.lovkisport.blog", "port": 443, "cipher": "\u007f}tkε��\u001a��\u001f���u���Mt��\u001cwF�", "password": "", "udp": true}
+  - {"name": "185.200.199.75:8444", "type": "ss", "server": "185.200.199.75", "port": 8444, "cipher": "\u007f�^��������\u001f����־w��w�\\�}=", "password": "", "udp": true}
+  - {"name": "31.57.157.54:8080", "type": "ss", "server": "31.57.157.54", "port": 8080, "cipher": "\u007f��\u007f�{��=��6׏�y�~�F��}ׇ�", "password": "", "udp": true}
+  - {"name": "87.58.204.60:443", "type": "ss", "server": "87.58.204.60", "port": 443, "cipher": "\u007f�\u001b��u��xk�\u001a珚y���y�4ٯ\u001e", "password": "", "udp": true}
   - {"name": "95.85.251.93:8443", "type": "ss", "server": "95.85.251.93", "port": 8443, "cipher": "}�]�GZ�v���9����F�ٽ�k}=y�5", "password": "", "udp": true}
-  - {"name": "mail.loyalsmile.net:2052", "type": "ss", "server": "mail.loyalsmile.net", "port": 2052, "cipher": "}���9��t�;o��o���Ƹy�v���", "password": "", "udp": true}
+  - {"name": "mail.loyalsmile.net:2052", "type": "ss", "server": "mail.loyalsmile.net", "port": 2052, "cipher": "}���9��t\u007f�;o��o���Ƹy�v���", "password": "", "udp": true}
   - {"name": "rgiw5k0gg5-1492025789-direct.kheibarr.com:443", "type": "ss", "server": "rgiw5k0gg5-1492025789-direct.kheibarr.com", "port": 443, "cipher": "�\b��M �", "password": "", "udp": true}
   - {"name": "dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev:443", "type": "trojan", "server": "dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev", "port": 443, "password": "LcICDcp!jD9TFV$NbH", "udp": true, "sni": "dl2uF-iVdeZILZ3E86rK18.Hhvt37tjm2XBOsQL5HXogN-Y.woRKERS.dEv", "alpn": ["http/1.1"], "client-fingerprint": "chrome", "network": "ws", "ws-opts": {"path": "/tr/pg4wM48V9O859nmqsJg22EOFKN4S570y?ed", "headers": {"Host": "dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev"}}}
   - {"name": "www.speedtest.net:443", "type": "trojan", "server": "www.speedtest.net", "port": 443, "password": "humanity", "udp": true, "sni": "www.calmlunch.com", "network": "ws", "ws-opts": {"path": "/assignment", "headers": {"Host": "www.calmlunch.com"}}}
