@@ -17,6 +17,7 @@ jobs:
         https://github.com/R3ZARAHIMI/tg-v2ray-configs-every2h/raw/refs/heads/main/Original-Configs.txt
       TARGET_FILE: verified.txt
       SECOND_FILE: pfs_servers.txt
+      CLASH_FILE: clash.yaml   # full Clash/Mihomo config, import the raw link as a subscription
 
     steps:
       - name: Check out your repo
@@ -84,16 +85,268 @@ jobs:
             exit 1
           fi
 
+          # Convert the merged share links into a full Clash/Mihomo config.
+          # Supports vmess, vless, trojan, ss, hysteria2/hy2. Anything else
+          # (or anything Mihomo can't express, e.g. xhttp, ss plugins) is skipped.
+          python3 - "$tmp/merged.txt" > "$tmp/clash.yaml" <<'CLASH_PY'
+          import sys, base64, json
+          from urllib.parse import urlsplit, parse_qs, unquote
+
+          TEST_URL = "http://www.gstatic.com/generate_204"
+
+          def pad(b):
+              return b + "=" * (-len(b) % 4)
+
+          def b64(s):
+              s = s.strip().replace("-", "+").replace("_", "/")
+              return base64.b64decode(pad(s)).decode("utf-8", "replace")
+
+          def q1(qs, *names, default=""):
+              for n in names:
+                  v = qs.get(n)
+                  if v and v[0] != "":
+                      return v[0]
+              return default
+
+          def truthy(v):
+              return str(v).strip().lower() in ("1", "true", "yes")
+
+          def alpn_list(v):
+              return [a for a in str(v).split(",") if a]
+
+          def transport(p, net, host, path, service, header=""):
+              net = (net or "tcp").lower()
+              if net in ("tcp", "raw"):
+                  if header == "http":
+                      raise ValueError("tcp http-header obfs unsupported")
+                  p["network"] = "tcp"
+              elif net in ("ws", "httpupgrade"):
+                  opts = {"path": path or "/"}
+                  if host:
+                      opts["headers"] = {"Host": host}
+                  if net == "httpupgrade":
+                      opts["v2ray-http-upgrade"] = True
+                  p["network"] = "ws"
+                  p["ws-opts"] = opts
+              elif net == "grpc":
+                  p["network"] = "grpc"
+                  p["grpc-opts"] = {"grpc-service-name": service or path or ""}
+              elif net in ("h2", "http"):
+                  p["network"] = "h2"
+                  p["h2-opts"] = {"host": [host] if host else [], "path": path or "/"}
+              else:
+                  raise ValueError("unsupported transport " + net)
+
+          def conv_vmess(line):
+              j = json.loads(b64(line.partition("://")[2]))
+              p = {"name": str(j.get("ps") or ""), "type": "vmess",
+                   "server": str(j["add"]).strip(), "port": int(j["port"]),
+                   "uuid": str(j["id"]).strip(), "alterId": int(j.get("aid") or 0),
+                   "cipher": j.get("scy") or "auto", "udp": True}
+              if str(j.get("tls", "")).lower() in ("tls", "1", "true"):
+                  p["tls"] = True
+                  sni = j.get("sni") or j.get("host")
+                  if sni:
+                      p["servername"] = sni
+                  if j.get("alpn"):
+                      p["alpn"] = alpn_list(j["alpn"])
+                  if j.get("fp"):
+                      p["client-fingerprint"] = j["fp"]
+                  if truthy(j.get("allowInsecure", "")):
+                      p["skip-cert-verify"] = True
+              transport(p, j.get("net"), j.get("host"), j.get("path"), j.get("path"), j.get("type") or "")
+              return p
+
+          def conv_vless(line):
+              u = urlsplit(line)
+              qs = parse_qs(u.query)
+              if q1(qs, "encryption", default="none").lower() != "none":
+                  raise ValueError("vless encryption unsupported")
+              p = {"name": unquote(u.fragment), "type": "vless", "server": u.hostname,
+                   "port": u.port, "uuid": unquote(u.username or ""), "udp": True}
+              if q1(qs, "flow"):
+                  p["flow"] = q1(qs, "flow")
+              sec = q1(qs, "security").lower()
+              if sec in ("tls", "reality"):
+                  p["tls"] = True
+                  if q1(qs, "sni"):
+                      p["servername"] = q1(qs, "sni")
+                  if q1(qs, "fp"):
+                      p["client-fingerprint"] = q1(qs, "fp")
+                  if q1(qs, "alpn"):
+                      p["alpn"] = alpn_list(q1(qs, "alpn"))
+                  if truthy(q1(qs, "allowInsecure", "insecure")):
+                      p["skip-cert-verify"] = True
+                  if sec == "reality":
+                      if not q1(qs, "pbk"):
+                          raise ValueError("reality without public key")
+                      p["reality-opts"] = {"public-key": q1(qs, "pbk"), "short-id": q1(qs, "sid")}
+              elif sec not in ("", "none"):
+                  raise ValueError("unsupported security " + sec)
+              transport(p, q1(qs, "type", default="tcp"), q1(qs, "host"), q1(qs, "path"),
+                        q1(qs, "serviceName"), q1(qs, "headerType"))
+              return p
+
+          def conv_trojan(line):
+              u = urlsplit(line)
+              qs = parse_qs(u.query)
+              sec = q1(qs, "security", default="tls").lower()
+              if sec not in ("tls", ""):
+                  raise ValueError("unsupported trojan security " + sec)
+              p = {"name": unquote(u.fragment), "type": "trojan", "server": u.hostname,
+                   "port": u.port, "password": unquote(u.username or ""), "udp": True}
+              if q1(qs, "sni", "peer"):
+                  p["sni"] = q1(qs, "sni", "peer")
+              if q1(qs, "alpn"):
+                  p["alpn"] = alpn_list(q1(qs, "alpn"))
+              if q1(qs, "fp"):
+                  p["client-fingerprint"] = q1(qs, "fp")
+              if truthy(q1(qs, "allowInsecure", "insecure")):
+                  p["skip-cert-verify"] = True
+              transport(p, q1(qs, "type", default="tcp"), q1(qs, "host"), q1(qs, "path"),
+                        q1(qs, "serviceName"), q1(qs, "headerType"))
+              return p
+
+          def conv_ss(line):
+              rest = line.partition("://")[2]
+              main, _, frag = rest.partition("#")
+              main, _, query = main.partition("?")
+              main = main.rstrip("/")
+              if "@" in main:
+                  userinfo, _, hostport = main.rpartition("@")
+                  cred = unquote(userinfo)
+                  if ":" not in cred:
+                      cred = b64(cred)
+              else:
+                  # legacy format: ss://base64(method:pass@host:port)
+                  cred, _, hostport = b64(main).rpartition("@")
+              if parse_qs(query).get("plugin"):
+                  raise ValueError("ss plugins unsupported")
+              method, _, password = cred.partition(":")
+              host, _, port = hostport.rpartition(":")
+              if not method:
+                  raise ValueError("no cipher")
+              return {"name": unquote(frag), "type": "ss", "server": host.strip("[]"),
+                      "port": int(port), "cipher": method, "password": password, "udp": True}
+
+          def conv_hy2(line):
+              u = urlsplit(line)
+              qs = parse_qs(u.query)
+              password = unquote(u.username or "")
+              if u.password:
+                  password += ":" + unquote(u.password)
+              p = {"name": unquote(u.fragment), "type": "hysteria2", "server": u.hostname,
+                   "port": u.port, "password": password}
+              if q1(qs, "sni"):
+                  p["sni"] = q1(qs, "sni")
+              if truthy(q1(qs, "insecure", "allowInsecure")):
+                  p["skip-cert-verify"] = True
+              if q1(qs, "obfs"):
+                  p["obfs"] = q1(qs, "obfs")
+                  p["obfs-password"] = q1(qs, "obfs-password")
+              if q1(qs, "alpn"):
+                  p["alpn"] = alpn_list(q1(qs, "alpn"))
+              return p
+
+          CONVERTERS = {"vmess": conv_vmess, "vless": conv_vless, "trojan": conv_trojan,
+                        "ss": conv_ss, "hysteria2": conv_hy2, "hy2": conv_hy2}
+
+          proxies, used, skipped = [], {"Proxy", "Auto", "DIRECT", "REJECT"}, 0
+          with open(sys.argv[1], encoding="utf-8", errors="replace") as f:
+              for line in f:
+                  line = line.strip()
+                  scheme, sep, _ = line.partition("://")
+                  fn = CONVERTERS.get(scheme.lower()) if sep else None
+                  if not fn:
+                      skipped += 1
+                      continue
+                  try:
+                      p = fn(line)
+                      if not p.get("server") or not p.get("port"):
+                          raise ValueError("missing server/port")
+                      if p["type"] in ("vmess", "vless") and not p.get("uuid"):
+                          raise ValueError("missing uuid")
+                  except Exception:
+                      skipped += 1
+                      continue
+                  base = " ".join((p.get("name") or "").split()) or "%s:%s" % (p["server"], p["port"])
+                  name, n = base, 2
+                  while name in used:
+                      name = "%s #%d" % (base, n)
+                      n += 1
+                  used.add(name)
+                  p["name"] = name
+                  proxies.append(p)
+
+          if not proxies:
+              print("No convertible servers; aborting.", file=sys.stderr)
+              sys.exit(1)
+          print("Clash: converted %d servers, skipped %d" % (len(proxies), skipped), file=sys.stderr)
+
+          def j(x):
+              return json.dumps(x, ensure_ascii=False, separators=(", ", ": "))
+
+          names = [p["name"] for p in proxies]
+          out = [
+              "# Auto-generated. Do not edit by hand.",
+              "mixed-port: 7890",
+              "allow-lan: false",
+              "mode: rule",
+              "log-level: warning",
+              "ipv6: false",
+              "unified-delay: true",
+              "dns:",
+              "  enable: true",
+              "  ipv6: false",
+              "  enhanced-mode: fake-ip",
+              "  fake-ip-range: 198.18.0.1/16",
+              "  fake-ip-filter:",
+              '    - "*.lan"',
+              '    - "+.local"',
+              "  default-nameserver:",
+              "    - 1.1.1.1",
+              "    - 8.8.8.8",
+              "  nameserver:",
+              "    - https://1.1.1.1/dns-query",
+              "    - https://8.8.8.8/dns-query",
+              "proxies:",
+          ]
+          out += ["  - " + j(p) for p in proxies]
+          out += [
+              "proxy-groups:",
+              "  - " + j({"name": "Proxy", "type": "select", "proxies": ["Auto"] + names}),
+              "  - " + j({"name": "Auto", "type": "url-test", "proxies": names,
+                          "url": TEST_URL, "interval": 300, "tolerance": 50}),
+              "rules:",
+              "  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve",
+              "  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve",
+              "  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve",
+              "  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
+              "  - IP-CIDR,169.254.0.0/16,DIRECT,no-resolve",
+              "  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve",
+              "  - IP-CIDR6,::1/128,DIRECT,no-resolve",
+              "  - IP-CIDR6,fc00::/7,DIRECT,no-resolve",
+              "  - IP-CIDR6,fe80::/10,DIRECT,no-resolve",
+              "  - DOMAIN-SUFFIX,local,DIRECT",
+              "  - DOMAIN-SUFFIX,lan,DIRECT",
+              "  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT",
+              "  - MATCH,Proxy",
+          ]
+          print("\n".join(out))
+          CLASH_PY
+
+          # Only now touch the repo files, so a failure above leaves everything unchanged
           cp "$tmp/merged.txt" "$TARGET_FILE"
           cp "$TARGET_FILE" "$SECOND_FILE"
+          cp "$tmp/clash.yaml" "$CLASH_FILE"
 
-      - name: Commit and push if the file changed
+      - name: Commit and push if the files changed
         run: |
-          if [ -n "$(git status --porcelain -- "$TARGET_FILE" "$SECOND_FILE")" ]; then
+          if [ -n "$(git status --porcelain -- "$TARGET_FILE" "$SECOND_FILE" "$CLASH_FILE")" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add "$TARGET_FILE" "$SECOND_FILE"
-            git commit -m "Sync $TARGET_FILE from upstream"
+            git add "$TARGET_FILE" "$SECOND_FILE" "$CLASH_FILE"
+            git commit -m "Sync $TARGET_FILE and $CLASH_FILE from upstream"
             git push
           else
             echo "No changes upstream."
