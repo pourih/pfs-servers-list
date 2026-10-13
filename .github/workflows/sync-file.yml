@@ -89,19 +89,70 @@ jobs:
           # Supports vmess, vless, trojan, ss, hysteria2/hy2. Anything else
           # (or anything Mihomo can't express, e.g. xhttp, ss plugins) is skipped.
           python3 - "$tmp/merged.txt" > "$tmp/clash.yaml" <<'CLASH_PY'
-          import sys, base64, json
+          import sys, re, base64, json
           from urllib.parse import urlsplit, parse_qs, unquote
 
           sys.stdout.reconfigure(encoding="utf-8")
 
           TEST_URL = "http://www.gstatic.com/generate_204"
 
+          # Shadowsocks ciphers Mihomo understands; anything else makes the client reject the whole profile.
+          SS_CIPHERS = {
+              "aes-128-gcm", "aes-192-gcm", "aes-256-gcm",
+              "chacha20-ietf-poly1305", "xchacha20-ietf-poly1305",
+              "aes-128-cfb", "aes-192-cfb", "aes-256-cfb",
+              "aes-128-ctr", "aes-192-ctr", "aes-256-ctr",
+              "chacha20-ietf", "xchacha20", "rc4-md5", "none",
+              "2022-blake3-aes-128-gcm", "2022-blake3-aes-256-gcm",
+              "2022-blake3-chacha20-poly1305",
+          }
+          SS_ALIASES = {"chacha20-poly1305": "chacha20-ietf-poly1305",
+                        "xchacha20-poly1305": "xchacha20-ietf-poly1305"}
+
+          HOST_RE = re.compile(
+              r"^(?:[A-Za-z0-9_](?:[A-Za-z0-9_-]{0,61}[A-Za-z0-9_])?\.)*"
+              r"[A-Za-z0-9_](?:[A-Za-z0-9_-]{0,61}[A-Za-z0-9_])?$|^[0-9A-Fa-f:]+$")
+
+          def yaml_ok(c):
+              # Characters YAML parsers (incl. Go's, used by FlClash) accept raw.
+              o = ord(c)
+              return ((0x20 <= o <= 0x7E or 0xA0 <= o <= 0xD7FF or 0xE000 <= o <= 0xFFFD
+                       or o >= 0x10000) and o not in (0x2028, 0x2029, 0xFEFF))
+
+          def clean(s):
+              # For display names only: silently drop forbidden/garbage characters.
+              return "".join(c for c in s if yaml_ok(c) and c != "�")
+
+          def sane(v):
+              # Real data never has control or replacement characters; garbage decodes do.
+              if isinstance(v, str):
+                  return all(yaml_ok(c) and c != "�" for c in v)
+              if isinstance(v, dict):
+                  return all(sane(k) and sane(x) for k, x in v.items())
+              if isinstance(v, (list, tuple)):
+                  return all(sane(x) for x in v)
+              return True
+
+          def check(p):
+              if not p.get("server") or not p.get("port"):
+                  raise ValueError("missing server/port")
+              if not HOST_RE.match(str(p["server"])):
+                  raise ValueError("odd server host")
+              if not 1 <= int(p["port"]) <= 65535:
+                  raise ValueError("bad port")
+              if p["type"] in ("vmess", "vless") and not p.get("uuid"):
+                  raise ValueError("missing uuid")
+              if p["type"] == "ss" and p["cipher"] not in SS_CIPHERS:
+                  raise ValueError("unsupported ss cipher")
+              if not sane({k: v for k, v in p.items() if k != "name"}):
+                  raise ValueError("garbage characters")
+
           def pad(b):
               return b + "=" * (-len(b) % 4)
 
           def b64(s):
               s = s.strip().replace("-", "+").replace("_", "/")
-              return base64.b64decode(pad(s)).decode("utf-8", "replace")
+              return base64.b64decode(pad(s)).decode("utf-8")   # strict: binary garbage raises
 
           def q1(qs, *names, default=""):
               for n in names:
@@ -226,6 +277,8 @@ jobs:
                   raise ValueError("ss plugins unsupported")
               method, _, password = cred.partition(":")
               host, _, port = hostport.rpartition(":")
+              method = method.lower()
+              method = SS_ALIASES.get(method, method)
               if not method:
                   raise ValueError("no cipher")
               return {"name": unquote(frag), "type": "ss", "server": host.strip("[]"),
@@ -264,10 +317,8 @@ jobs:
                       continue
                   try:
                       p = fn(line)
-                      if not p.get("server") or not p.get("port"):
-                          raise ValueError("missing server/port")
-                      if p["type"] in ("vmess", "vless") and not p.get("uuid"):
-                          raise ValueError("missing uuid")
+                      check(p)
+                      p["name"] = clean(p.get("name") or "")
                   except Exception:
                       skipped += 1
                       continue
@@ -284,12 +335,6 @@ jobs:
               print("No convertible servers; aborting.", file=sys.stderr)
               sys.exit(1)
           print("Clash: converted %d servers, skipped %d" % (len(proxies), skipped), file=sys.stderr)
-
-          def yaml_ok(c):
-              # Characters YAML parsers (incl. Go's, used by FlClash) accept raw.
-              o = ord(c)
-              return ((0x20 <= o <= 0x7E or 0xA0 <= o <= 0xD7FF or 0xE000 <= o <= 0xFFFD
-                       or o >= 0x10000) and o not in (0x2028, 0x2029, 0xFEFF))
 
           def j(x):
               # Keep real characters (emoji etc.) but \u-escape anything YAML rejects.
