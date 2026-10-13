@@ -92,6 +92,8 @@ jobs:
           import sys, base64, json
           from urllib.parse import urlsplit, parse_qs, unquote
 
+          sys.stdout.reconfigure(encoding="utf-8")
+
           TEST_URL = "http://www.gstatic.com/generate_204"
 
           def pad(b):
@@ -254,7 +256,7 @@ jobs:
           proxies, used, skipped = [], {"Proxy", "Auto", "DIRECT", "REJECT"}, 0
           with open(sys.argv[1], encoding="utf-8", errors="replace") as f:
               for line in f:
-                  line = line.strip()
+                  line = line.strip().lstrip("﻿")
                   scheme, sep, _ = line.partition("://")
                   fn = CONVERTERS.get(scheme.lower()) if sep else None
                   if not fn:
@@ -283,8 +285,16 @@ jobs:
               sys.exit(1)
           print("Clash: converted %d servers, skipped %d" % (len(proxies), skipped), file=sys.stderr)
 
+          def yaml_ok(c):
+              # Characters YAML parsers (incl. Go's, used by FlClash) accept raw.
+              o = ord(c)
+              return ((0x20 <= o <= 0x7E or 0xA0 <= o <= 0xD7FF or 0xE000 <= o <= 0xFFFD
+                       or o >= 0x10000) and o not in (0x2028, 0x2029, 0xFEFF))
+
           def j(x):
-              return json.dumps(x, ensure_ascii=False, separators=(", ", ": "))
+              # Keep real characters (emoji etc.) but \u-escape anything YAML rejects.
+              s = json.dumps(x, ensure_ascii=False, separators=(", ", ": "))
+              return "".join(c if yaml_ok(c) else "\\u%04x" % ord(c) for c in s)
 
           names = [p["name"] for p in proxies]
           out = [
