@@ -11,6 +11,10 @@
   "last_seen": "2026-10-18",
   "name": "Bravo-Xray-M10-D18"
  },
+ "103.107.52.106|52351": {
+  "last_seen": "2026-10-18",
+  "name": "Romeo-Foxtrot-M10-D18"
+ },
  "103.11.76.248|28679": {
   "last_seen": "2026-10-18",
   "name": "Echo-Romeo-M10-D18"
@@ -114,6 +118,10 @@
  "132.243.175.144|8388": {
   "last_seen": "2026-10-18",
   "name": "Zulu-M10-D18"
+ },
+ "138.68.131.253|443": {
+  "last_seen": "2026-10-18",
+  "name": "Romeo-Delta-M10-D18"
  },
  "139.180.146.200|8886": {
   "last_seen": "2026-10-18",
@@ -375,6 +383,10 @@
   "last_seen": "2026-10-18",
   "name": "Papa-Xray-M10-D18"
  },
+ "172.66.203.67|443": {
+  "last_seen": "2026-10-18",
+  "name": "Romeo-Echo-M10-D18"
+ },
  "172.67.137.209|443": {
   "last_seen": "2026-10-18",
   "name": "Juliett-Echo-M10-D18"
@@ -627,6 +639,10 @@
   "last_seen": "2026-10-18",
   "name": "Kilo-Victor-M10-D18"
  },
+ "2.27.69.128|443": {
+  "last_seen": "2026-10-18",
+  "name": "Romeo-Golf-M10-D18"
+ },
  "20.164.209.198|443": {
   "last_seen": "2026-10-18",
   "name": "Alpha-Echo-M10-D18"
@@ -666,6 +682,10 @@
  "208.84.100.209|2112": {
   "last_seen": "2026-10-18",
   "name": "November-Mike-M10-D18"
+ },
+ "209.38.109.222|443": {
+  "last_seen": "2026-10-18",
+  "name": "Romeo-Charlie-M10-D18"
  },
  "209.38.225.64|443": {
   "last_seen": "2026-10-18",
@@ -1071,9 +1091,17 @@
   "last_seen": "2026-10-18",
   "name": "Echo-Papa-M10-D18"
  },
+ "78.17.171.62|443": {
+  "last_seen": "2026-10-18",
+  "name": "Romeo-Alpha-M10-D18"
+ },
  "78.47.104.114|47081": {
   "last_seen": "2026-10-18",
   "name": "Alpha-Uniform-M10-D18"
+ },
+ "8.217.13.103|443": {
+  "last_seen": "2026-10-18",
+  "name": "Romeo-Hotel-M10-D18"
  },
  "8.217.254.88|443": {
   "last_seen": "2026-10-18",
@@ -1186,6 +1214,10 @@
  "92.42.99.143|443": {
   "last_seen": "2026-10-18",
   "name": "Juliett-Hotel-M10-D18"
+ },
+ "93.152.215.176|8443": {
+  "last_seen": "2026-10-18",
+  "name": "Romeo-Bravo-M10-D18"
  },
  "93.89.220.37|443": {
   "last_seen": "2026-10-18",
@@ -1594,6 +1626,10 @@
  "node8.liudonghoe.com|443": {
   "last_seen": "2026-10-18",
   "name": "Mike-Zulu-M10-D18"
+ },
+ "noted-cougar.rooster465.autos|443": {
+  "last_seen": "2026-10-18",
+  "name": "Romeo-India-M10-D18"
  },
  "oc.imfun.fun|18112": {
   "last_seen": "2026-10-18",
