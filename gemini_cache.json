@@ -14,6 +14,9 @@
  "104.18.35.86|443": {
   "gemini": false
  },
+ "104.21.7.133|80": {
+  "gemini": false
+ },
  "104.21.70.21|443": {
   "gemini": false
  },
@@ -218,6 +221,9 @@
  "177.3.222.100|443": {
   "gemini": false
  },
+ "178.17.57.33|8444": {
+  "gemini": false
+ },
  "178.172.227.124|14430": {
   "gemini": false
  },
@@ -243,6 +249,9 @@
   "gemini": false
  },
  "185.192.22.159|8444": {
+  "gemini": false
+ },
+ "185.200.199.199|8444": {
   "gemini": false
  },
  "185.212.149.7|52080": {
@@ -345,6 +354,9 @@
   "gemini": false
  },
  "2.27.69.117|443": {
+  "gemini": false
+ },
+ "2.27.69.128|443": {
   "gemini": false
  },
  "20.164.212.146|443": {
@@ -557,6 +569,15 @@
  "47.237.74.17|16263": {
   "gemini": false
  },
+ "47.243.153.153|443": {
+  "gemini": false
+ },
+ "47.243.194.125|443": {
+  "gemini": false
+ },
+ "47.243.65.243|443": {
+  "gemini": false
+ },
  "47.76.57.83|443": {
   "gemini": false
  },
@@ -716,6 +737,9 @@
  "83.147.18.75|443": {
   "gemini": false
  },
+ "83.168.91.16|443": {
+  "gemini": false
+ },
  "83.219.97.18|443": {
   "gemini": false
  },
@@ -785,6 +809,12 @@
  "ccs2g.pai50288.uk|443": {
   "gemini": false
  },
+ "cdn.sfacg.uk|2083": {
+  "gemini": false
+ },
+ "ce1fc2d8.krkt.hkssip.com|49642": {
+  "gemini": false
+ },
  "cf.090227.xyz|443": {
   "gemini": false
  },
@@ -801,6 +831,9 @@
   "gemini": false
  },
  "de.northvale.cloud|443": {
+  "gemini": false
+ },
+ "de.zhou-yufan.com|443": {
   "gemini": false
  },
  "de2.dedushka.top|443": {
@@ -824,7 +857,13 @@
  "dog-hk.kunlun01dns.com|21021": {
   "gemini": false
  },
+ "dog-us.kunlun01dns.com|21009": {
+  "gemini": false
+ },
  "edge.bookmai.com|443": {
+  "gemini": false
+ },
+ "ee.h1cloud.net|25895": {
   "gemini": false
  },
  "entry6.chick-chirik.com|18563": {
@@ -989,6 +1028,9 @@
  "nycqg19zkwacpm1b.v.3dns.vip|443": {
   "gemini": false
  },
+ "oc.imfun.fun|18112": {
+  "gemini": false
+ },
  "outline_vpn\",\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"\",\"type\":\"---\",\"v\":\"2\",\"vcn\"|\"\"}": {
   "gemini": false
  },
@@ -1050,6 +1092,9 @@
   "gemini": false
  },
  "proxy_online_net\",\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"\",\"type\":\"none\",\"v\":\"2\",\"vcn\"|\"\"}": {
+  "gemini": false
+ },
+ "qtkdr8jxe3wefxjm.v.3dns.vip|443": {
   "gemini": false
  },
  "randomquaint.net|2053": {

@@ -104,7 +104,7 @@
   "name": "Charlie-Golf-M10-D18"
  },
  "104.21.7.133|80": {
-  "last_seen": "2026-10-18",
+  "last_seen": "2026-10-19",
   "name": "Quebec-Papa-M10-D18"
  },
  "104.21.70.21|443": {
@@ -1064,7 +1064,7 @@
   "name": "Kilo-Victor-M10-D18"
  },
  "2.27.69.128|443": {
-  "last_seen": "2026-10-18",
+  "last_seen": "2026-10-19",
   "name": "Romeo-Golf-M10-D18"
  },
  "20.164.209.198|443": {
@@ -1650,6 +1650,14 @@
  "47.243.153.153|443": {
   "last_seen": "2026-10-19",
   "name": "Xray-Delta-M10-D18"
+ },
+ "47.243.194.125|443": {
+  "last_seen": "2026-10-19",
+  "name": "Golf-Papa-M10-D19"
+ },
+ "47.243.65.243|443": {
+  "last_seen": "2026-10-19",
+  "name": "Golf-Quebec-M10-D19"
  },
  "47.253.226.114|443": {
   "last_seen": "2026-10-18",
@@ -2424,7 +2432,7 @@
   "name": "Alpha-Alpha-Alpha-M10-D18"
  },
  "cdn.sfacg.uk|2083": {
-  "last_seen": "2026-10-18",
+  "last_seen": "2026-10-19",
   "name": "Xray-Echo-M10-D18"
  },
  "ce1fc2d8.krkt.hkssip.com|49642": {
