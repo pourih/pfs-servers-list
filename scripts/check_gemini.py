@@ -6,27 +6,44 @@ Usage: python3 scripts/check_gemini.py merged.txt old_cache.json new_cache.json
 import sys
 import os
 import json
-from concurrent.futures import ThreadPoolExecutor
+import socket
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from merge import key
 
-def test_node(line):
+MAX_TESTS_PER_RUN = 60  # Prevents long runs; remaining nodes test on next runs
+WORKERS = 10            # Number of parallel tests
+TIMEOUT = 5             # Gemini responds in <2s on live nodes; 5s is plenty
+
+
+def is_port_open(host, port, timeout=1.5):
+    """Quick 1.5s TCP check to eliminate dead servers instantly."""
+    try:
+        with socket.create_connection((host, int(port)), timeout=timeout):
+            return True
+    except Exception:
+        return False
+
+
+def test_node(line, host, port):
     """Test if a single node can access the Gemini endpoint."""
+    # Fast check: skip dead server ports immediately
+    if not is_port_open(host, port):
+        return False, "Server unreachable"
+
     proxy = None
     try:
         import requests
         from singbox2proxy import SingBoxProxy
 
-        # Strip remark fragment (#tag) so special characters/emojis don't break the parser
         clean_line = line.split("#")[0]
         proxy = SingBoxProxy(clean_line)
 
-        # Connect through the proxy using standard requests
         session = requests.Session()
         session.proxies = proxy.proxy_for_requests
 
         resp = session.get(
             "https://generativelanguage.googleapis.com/v1beta/models",
-            timeout=12
+            timeout=TIMEOUT
         )
         body = resp.text.lower()
 
@@ -38,10 +55,10 @@ def test_node(line):
         if any(term in body for term in ["api key", "api_key", "invalid_argument"]) or resp.status_code == 200:
             return True, "Supported"
 
-        return False, f"HTTP {resp.status_code}: {resp.text[:50]}"
+        return False, f"HTTP {resp.status_code}"
 
     except Exception as e:
-        return False, f"{type(e).__name__}: {e}"
+        return False, f"{type(e).__name__}"
     finally:
         if proxy:
             try:
@@ -69,23 +86,32 @@ def main():
                 continue
             k = key(line)
             if k[0] == "addr":
-                node_id = f"{k[1]}|{k[2]}"
-                # Test new nodes AND re-test nodes previously marked as false
+                host, port = k[1], k[2]
+                node_id = f"{host}|{port}"
+                # Test new nodes or re-test nodes not yet marked as working
                 if node_id not in cache or not cache[node_id].get("gemini", False):
-                    to_test[node_id] = line
+                    to_test[node_id] = (line, host, port)
 
-    if to_test:
-        print(f"Testing {len(to_test)} node(s) for Gemini compatibility...")
-        with ThreadPoolExecutor(max_workers=3) as executor:
-            future_to_node = {executor.submit(test_node, line): node_id for node_id, line in to_test.items()}
-            for future in future_to_node:
+    # Limit batch size to keep workflow run under 1-2 minutes
+    batch = dict(list(to_test.items())[:MAX_TESTS_PER_RUN])
+
+    if batch:
+        print(f"Testing {len(batch)} node(s) for Gemini (capped at {MAX_TESTS_PER_RUN} per run)...", flush=True)
+        with ThreadPoolExecutor(max_workers=WORKERS) as executor:
+            # Submit all jobs
+            future_to_node = {
+                executor.submit(test_node, line, host, port): node_id
+                for node_id, (line, host, port) in batch.items()
+            }
+            # Stream output in real-time as each node finishes
+            for future in as_completed(future_to_node):
                 node_id = future_to_node[future]
                 is_supported, reason = future.result()
                 cache[node_id] = {"gemini": is_supported}
                 status_icon = "✨ Supported" if is_supported else f"❌ ({reason})"
-                print(f"  {node_id} -> {status_icon}")
+                print(f"  {node_id} -> {status_icon}", flush=True)
     else:
-        print("All nodes already have verified status in cache.")
+        print("All nodes already have verified status in cache.", flush=True)
 
     with open(new_cache_file, "w", encoding="utf-8") as f:
         json.dump(cache, f, indent=1, sort_keys=True, ensure_ascii=False)
