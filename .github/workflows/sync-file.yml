@@ -16,7 +16,6 @@ jobs:
         https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt
         https://github.com/R3ZARAHIMI/tg-v2ray-configs-every2h/raw/refs/heads/main/Original-Configs.txt
         https://github.com/roosterkid/openproxylist/raw/refs/heads/main/V2RAY_RAW.txt
-        https://raw.githubusercontent.com/pourih/pfs-servers-list/refs/heads/main/clean.txt
       TARGET_FILE: verified.txt
       SECOND_FILE: pfs_servers.txt
       NAMES_FILE: names.json
