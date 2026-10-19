@@ -1023,6 +1023,10 @@
   "last_seen": "2026-10-18",
   "name": "Oscar-Tango-M10-D18"
  },
+ "194.113.74.166|443": {
+  "last_seen": "2026-10-19",
+  "name": "Juliett-Kilo-M10-D19"
+ },
  "194.55.239.164|8443": {
   "last_seen": "2026-10-19",
   "name": "Alpha-Golf-M10-D19"
@@ -1983,6 +1987,10 @@
   "last_seen": "2026-10-19",
   "name": "Foxtrot-Tango-M10-D19"
  },
+ "52.47.87.160|22222": {
+  "last_seen": "2026-10-19",
+  "name": "Juliett-Lima-M10-D19"
+ },
  "52.47.87.160|22223": {
   "last_seen": "2026-10-19",
   "name": "Golf-Uniform-M10-D19"
@@ -2792,7 +2800,7 @@
   "name": "Alpha-Alpha-Kilo-M10-D18"
  },
  "dog-us.kunlun01dns.com|21010": {
-  "last_seen": "2026-10-18",
+  "last_seen": "2026-10-19",
   "name": "November-Alpha-M10-D18"
  },
  "du-rov.secureservice.top|8443": {
