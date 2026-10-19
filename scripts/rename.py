@@ -3,11 +3,11 @@
 Name = NATO word(s) + month (M) + day (D) the server was first seen.
 If the single words run out on a day, two words are used: Alpha-Alpha-M10-D18.
 
-Usage: python3 rename.py merged.txt old_names.json new_names.json > named.txt
+Usage: python3 rename.py merged.txt old_names.json new_names.json [gemini_cache.json] > named.txt
 """
 import sys, os, json, base64, itertools
 from datetime import datetime, timezone, timedelta
-from merge import key, pad   # same "what is a server" rule as merge.py
+from merge import key, pad
 
 NATO = [
     "Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel",
@@ -15,11 +15,10 @@ NATO = [
     "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey",
     "Xray", "Yankee", "Zulu",
 ]
-FORGET_AFTER_DAYS = 30   # servers not seen for this long are forgotten (their names can be reused)
+FORGET_AFTER_DAYS = 30
 
 
 def word_parts():
-    """Alpha, Bravo, ... Zulu, then Alpha-Alpha, Alpha-Bravo, ... and so on."""
     n = 1
     while True:
         for combo in itertools.product(NATO, repeat=n):
@@ -35,7 +34,6 @@ def new_name(used, today):
 
 
 def set_remark(line, name):
-    """Replace the original remark of a share link with our name."""
     scheme, _, rest = line.partition("://")
     if scheme.lower() == "vmess":
         body = rest.split("#")[0]
@@ -48,15 +46,26 @@ def set_remark(line, name):
 
 def main():
     merged_file, old_file, new_file = sys.argv[1:4]
+    gemini_file = sys.argv[4] if len(sys.argv) > 4 else None
+
     today = datetime.now(timezone.utc).date()
     cutoff = (today - timedelta(days=FORGET_AFTER_DAYS)).isoformat()
 
-    # Load the record and drop servers not seen for a long time
+    # Load existing server names
     records = {}
     if os.path.exists(old_file):
         with open(old_file, encoding="utf-8") as f:
             records = {k: v for k, v in json.load(f).items() if v["last_seen"] >= cutoff}
     used = {v["name"] for v in records.values()}
+
+    # Load Gemini status cache if present
+    gemini_cache = {}
+    if gemini_file and os.path.exists(gemini_file):
+        try:
+            with open(gemini_file, encoding="utf-8") as f:
+                gemini_cache = json.load(f)
+        except Exception:
+            gemini_cache = {}
 
     with open(merged_file, encoding="utf-8", errors="replace") as f:
         for line in f:
@@ -64,16 +73,23 @@ def main():
             if not line:
                 continue
             k = key(line)
-            if k[0] != "addr":      # can't tell which server it is: leave it untouched
+            if k[0] != "addr":
                 print(line)
                 continue
+
             node = "%s|%s" % (k[1], k[2])
             name = records[node]["name"] if node in records else new_name(used, today)
+
+            # Prepend ✨ if node connects to Gemini
+            is_gemini = gemini_cache.get(node, {}).get("gemini", False)
+            display_name = f"✨ {name}" if is_gemini else name
+
             try:
-                print(set_remark(line, name))
+                print(set_remark(line, display_name))
             except Exception:
-                print(line)         # couldn't rewrite it: keep the original
+                print(line)
                 continue
+
             used.add(name)
             records[node] = {"name": name, "last_seen": today.isoformat()}
 
