@@ -16,26 +16,27 @@ def test_node(line):
         from singbox2proxy import SingBoxProxy
         proxy = SingBoxProxy(line)
 
-        # Query the official Gemini API endpoint
         resp = proxy.request(
             "GET",
             "https://generativelanguage.googleapis.com/v1beta/models",
-            timeout=8
+            timeout=12
         )
-        body = resp.text
+        body = resp.text.lower()
 
-        # If Google rejects based on region:
-        if "User location is not supported" in body:
+        # 1. Google's explicit region block
+        if "location" in body and "not supported" in body:
             return False, "Region blocked by Google"
 
-        # If Google passed the location gate (asks for API key or returns 200):
-        if "API key not valid" in body or resp.status_code == 200:
+        # 2. Location gate passed!
+        # Google only validates the API key after verifying location passes.
+        if any(term in body for term in ["api key", "api_key", "invalid_argument"]) or resp.status_code == 200:
             return True, "Supported"
 
-        return False, f"HTTP {resp.status_code} - unexpected response"
+        # 3. Any unexpected body response
+        return False, f"HTTP {resp.status_code}: {resp.text[:50]}"
 
     except Exception as e:
-        return False, f"Connection error: {type(e).__name__}"
+        return False, f"{type(e).__name__}"
     finally:
         if proxy:
             try:
@@ -64,13 +65,14 @@ def main():
             k = key(line)
             if k[0] == "addr":
                 node_id = f"{k[1]}|{k[2]}"
-                # Test nodes not in cache, or re-test nodes that previously failed
+                # Test new nodes AND re-test nodes previously marked as false
                 if node_id not in cache or not cache[node_id].get("gemini", False):
                     to_test[node_id] = line
 
     if to_test:
         print(f"Testing {len(to_test)} node(s) for Gemini compatibility...")
-        with ThreadPoolExecutor(max_workers=5) as executor:
+        # 3 concurrent checks keeps it gentle and stable
+        with ThreadPoolExecutor(max_workers=3) as executor:
             future_to_node = {executor.submit(test_node, line): node_id for node_id, line in to_test.items()}
             for future in future_to_node:
                 node_id = future_to_node[future]
