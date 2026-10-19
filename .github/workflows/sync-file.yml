@@ -48,7 +48,7 @@ jobs:
 
       - name: Install proxy testing tool
         run: |
-          pip install --quiet singbox2proxy
+          pip install --quiet singbox2proxy curl-cffi
 
       - name: Merge, check Gemini, and name servers
         run: |
