@@ -155,6 +155,10 @@
   "last_seen": "2026-10-19",
   "name": "Kilo-Alpha-M10-D18"
  },
+ "123.111.169.70|2053": {
+  "last_seen": "2026-10-19",
+  "name": "Golf-Xray-M10-D19"
+ },
  "13.135.17.74|22222": {
   "last_seen": "2026-10-18",
   "name": "Mike-Lima-M10-D18"
@@ -194,6 +198,10 @@
  "13.140.91.117|36154": {
   "last_seen": "2026-10-19",
   "name": "Yankee-Bravo-M10-D18"
+ },
+ "13.37.116.116|22222": {
+  "last_seen": "2026-10-19",
+  "name": "Golf-Sierra-M10-D19"
  },
  "13.37.116.116|22223": {
   "last_seen": "2026-10-19",
@@ -740,7 +748,7 @@
   "name": "Quebec-November-M10-D18"
  },
  "178.94.25.73|14430": {
-  "last_seen": "2026-10-18",
+  "last_seen": "2026-10-19",
   "name": "Mike-Tango-M10-D18"
  },
  "179.61.145.245|443": {
@@ -1311,6 +1319,10 @@
   "last_seen": "2026-10-19",
   "name": "Charlie-Uniform-M10-D19"
  },
+ "3.9.113.212|22224": {
+  "last_seen": "2026-10-19",
+  "name": "Golf-Tango-M10-D19"
+ },
  "31.56.177.95|8445": {
   "last_seen": "2026-10-19",
   "name": "Sierra-Lima-M10-D18"
@@ -1526,6 +1538,10 @@
  "45.12.63.96|443": {
   "last_seen": "2026-10-19",
   "name": "Bravo-Kilo-M10-D19"
+ },
+ "45.128.60.127|443": {
+  "last_seen": "2026-10-19",
+  "name": "Golf-Whiskey-M10-D19"
  },
  "45.130.125.160|443": {
   "last_seen": "2026-10-19",
@@ -1842,6 +1858,10 @@
  "511.150333.xyz|21004": {
   "last_seen": "2026-10-19",
   "name": "Foxtrot-Tango-M10-D19"
+ },
+ "52.47.87.160|22223": {
+  "last_seen": "2026-10-19",
+  "name": "Golf-Uniform-M10-D19"
  },
  "54.169.200.246|41688": {
   "last_seen": "2026-10-18",
@@ -2190,6 +2210,10 @@
  "84.247.155.196|443": {
   "last_seen": "2026-10-19",
   "name": "Delta-Whiskey-M10-D19"
+ },
+ "84.32.100.149|443": {
+  "last_seen": "2026-10-19",
+  "name": "Golf-Romeo-M10-D19"
  },
  "84.32.109.20|443": {
   "last_seen": "2026-10-19",
@@ -3387,6 +3411,10 @@
   "last_seen": "2026-10-19",
   "name": "Alpha-Foxtrot-M10-D19"
  },
+ "speedtest.org|8443": {
+  "last_seen": "2026-10-19",
+  "name": "Golf-Victor-M10-D19"
+ },
  "sql.popmintxo.cc|443": {
   "last_seen": "2026-10-19",
   "name": "Foxtrot-Quebec-M10-D19"
@@ -3640,7 +3668,7 @@
   "name": "Charlie-Lima-M10-D18"
  },
  "yg1.ygkkk.dpdns.org|443": {
-  "last_seen": "2026-10-18",
+  "last_seen": "2026-10-19",
   "name": "Whiskey-Delta-M10-D18"
  },
  "zfd-boardv2.kunlun01dns.com|16280": {
