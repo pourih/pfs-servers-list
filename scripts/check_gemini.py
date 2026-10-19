@@ -13,11 +13,18 @@ def test_node(line):
     """Test if a single node can access the Gemini endpoint."""
     proxy = None
     try:
+        import requests
         from singbox2proxy import SingBoxProxy
-        proxy = SingBoxProxy(line)
 
-        resp = proxy.request(
-            "GET",
+        # Strip remark fragment (#tag) so special characters/emojis don't break the parser
+        clean_line = line.split("#")[0]
+        proxy = SingBoxProxy(clean_line)
+
+        # Connect through the proxy using standard requests
+        session = requests.Session()
+        session.proxies = proxy.proxy_for_requests
+
+        resp = session.get(
             "https://generativelanguage.googleapis.com/v1beta/models",
             timeout=12
         )
@@ -27,16 +34,14 @@ def test_node(line):
         if "location" in body and "not supported" in body:
             return False, "Region blocked by Google"
 
-        # 2. Location gate passed!
-        # Google only validates the API key after verifying location passes.
+        # 2. Location gate passed! Google verified region and asked for key / gave 200
         if any(term in body for term in ["api key", "api_key", "invalid_argument"]) or resp.status_code == 200:
             return True, "Supported"
 
-        # 3. Any unexpected body response
         return False, f"HTTP {resp.status_code}: {resp.text[:50]}"
 
     except Exception as e:
-        return False, f"{type(e).__name__}"
+        return False, f"{type(e).__name__}: {e}"
     finally:
         if proxy:
             try:
@@ -71,7 +76,6 @@ def main():
 
     if to_test:
         print(f"Testing {len(to_test)} node(s) for Gemini compatibility...")
-        # 3 concurrent checks keeps it gentle and stable
         with ThreadPoolExecutor(max_workers=3) as executor:
             future_to_node = {executor.submit(test_node, line): node_id for node_id, line in to_test.items()}
             for future in future_to_node:
