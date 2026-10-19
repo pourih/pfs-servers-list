@@ -38,6 +38,12 @@
  "13.37.116.116|22224": {
   "gemini": false
  },
+ "130.94.65.201|80": {
+  "gemini": false
+ },
+ "130.94.67.40|80": {
+  "gemini": false
+ },
  "132.243.175.144|8388": {
   "gemini": false
  },
@@ -63,6 +69,12 @@
   "gemini": false
  },
  "144.31.101.196|33891": {
+  "gemini": false
+ },
+ "144.31.215.162|443": {
+  "gemini": false
+ },
+ "146.235.16.130|19825": {
   "gemini": false
  },
  "146.70.124.85|443": {
@@ -117,6 +129,9 @@
   "gemini": false
  },
  "154.36.158.197|8388": {
+  "gemini": false
+ },
+ "154.86.119.101|443": {
   "gemini": false
  },
  "158.173.20.208|443": {
@@ -200,7 +215,13 @@
  "177.1.192.81|443": {
   "gemini": false
  },
+ "177.3.222.100|443": {
+  "gemini": false
+ },
  "178.172.227.124|14430": {
+  "gemini": false
+ },
+ "178.172.227.228|14430": {
   "gemini": false
  },
  "18.135.18.254|22222": {
@@ -365,6 +386,12 @@
  "212.104.141.233|443": {
   "gemini": false
  },
+ "212.24.105.101|443": {
+  "gemini": false
+ },
+ "213.165.56.102|443": {
+  "gemini": false
+ },
  "213.176.78.59|443": {
   "gemini": false
  },
@@ -375,6 +402,12 @@
   "gemini": false
  },
  "216.245.184.90|443": {
+  "gemini": false
+ },
+ "217.60.35.144|443": {
+  "gemini": false
+ },
+ "217.60.35.146|443": {
   "gemini": false
  },
  "219.76.13.177|443": {
@@ -497,6 +530,18 @@
  "45.150.33.33|443": {
   "gemini": false
  },
+ "45.194.66.17|443": {
+  "gemini": false
+ },
+ "45.194.66.191|443": {
+  "gemini": false
+ },
+ "45.194.66.195|443": {
+  "gemini": false
+ },
+ "45.194.66.202|443": {
+  "gemini": false
+ },
  "45.32.52.173|8886": {
   "gemini": false
  },
@@ -551,6 +596,18 @@
  "51.89.194.151|2053": {
   "gemini": false
  },
+ "511.150333.xyz|21001": {
+  "gemini": false
+ },
+ "511.150333.xyz|21002": {
+  "gemini": false
+ },
+ "511.150333.xyz|21003": {
+  "gemini": false
+ },
+ "511.150333.xyz|21004": {
+  "gemini": false
+ },
  "54.229.151.97|59236": {
   "gemini": false
  },
@@ -584,6 +641,9 @@
  "67.220.95.3|18000": {
   "gemini": false
  },
+ "69.48.201.136|30016": {
+  "gemini": false
+ },
  "6jdvarazgu3qqr6q.v.3dns.vip|443": {
   "gemini": false
  },
@@ -606,6 +666,9 @@
   "gemini": false
  },
  "78.159.246.179|2053": {
+  "gemini": false
+ },
+ "79.139.59.46|443": {
   "gemini": false
  },
  "8.217.13.103|443": {
@@ -656,6 +719,9 @@
  "83.219.97.18|443": {
   "gemini": false
  },
+ "84.235.244.108|22573": {
+  "gemini": false
+ },
  "84.247.155.196|443": {
   "gemini": false
  },
@@ -680,6 +746,9 @@
  "93.89.220.37|443": {
   "gemini": false
  },
+ "95.128.71.79|14430": {
+  "gemini": false
+ },
  "95.174.68.188|14430": {
   "gemini": false
  },
@@ -702,6 +771,9 @@
   "gemini": false
  },
  "b2n.ir|443": {
+  "gemini": false
+ },
+ "b58e68t.lt1.h1clayd.click|443": {
   "gemini": false
  },
  "blog.findlocaljobnetworkandbuildcommunityconnections.com|443": {
@@ -779,7 +851,16 @@
  "flll.wordpresscrt.ir|7000": {
   "gemini": false
  },
+ "free-amsterdam-node-1.cloudwidecdn.com|443": {
+  "gemini": false
+ },
+ "free.sahanwickramasinghe.me|80": {
+  "gemini": false
+ },
  "freede.aiage.work|443": {
+  "gemini": false
+ },
+ "funagfrdfs.alixxplay.com|34379": {
   "gemini": false
  },
  "funagfrdfs.alixxplay.com|35544": {
@@ -791,13 +872,28 @@
  "funagfrdfs.alixxplay.com|47672": {
   "gemini": false
  },
+ "funagfrdfs.alixxplay.com|47691": {
+  "gemini": false
+ },
+ "funagfrdfs.alixxplay.com|54528": {
+  "gemini": false
+ },
  "funagfrdfs.alixxplay.com|55688": {
+  "gemini": false
+ },
+ "funagfrdfs.alixxplay.com|56415": {
   "gemini": false
  },
  "funagfrdfs.alixxplay.com|56656": {
   "gemini": false
  },
  "ger-1.berzulo.ir|50407": {
+  "gemini": false
+ },
+ "helllo.com.tr|2216": {
+  "gemini": false
+ },
+ "helllo.com.tr|2218": {
   "gemini": false
  },
  "hoert1rert.localip.ir|2087": {
@@ -825,6 +921,21 @@
   "gemini": false
  },
  "ir28482.jdjcr.3842.marzara.ir|1111": {
+  "gemini": false
+ },
+ "jdvymxi.cvewfjg.shop|443": {
+  "gemini": false
+ },
+ "jdwabxe.cvewfjg.shop|443": {
+  "gemini": false
+ },
+ "jdwacdi.cvewfjg.shop|443": {
+  "gemini": false
+ },
+ "jdwadgw.cvewfjg.shop|443": {
+  "gemini": false
+ },
+ "jklo.personalitytoday.com|55069": {
   "gemini": false
  },
  "jp4.998998.best|443": {
@@ -950,7 +1061,16 @@
  "resources.findlocaljobnetworkandbuildcommunityconnections.com|443": {
   "gemini": false
  },
+ "sc-thenetherlands1.09vpn.com|80": {
+  "gemini": false
+ },
+ "sc-thenetherlands2.09vpn.com|80": {
+  "gemini": false
+ },
  "se3.h1cloud.net|25119": {
+  "gemini": false
+ },
+ "sg2-8sb.6121999.dpdns.org|19825": {
   "gemini": false
  },
  "shadow.mikikoo.com|2087": {
@@ -971,10 +1091,16 @@
  "soso.sonstep.ir|14357": {
   "gemini": false
  },
+ "sql.popmintxo.cc|443": {
+  "gemini": false
+ },
  "sub.merky.top|443": {
   "gemini": false
  },
  "sub.skyshopnet.ir|443": {
+  "gemini": false
+ },
+ "support.zoom.us.v2ray.simspeedup.com|80": {
   "gemini": false
  },
  "sw.golangwikito.cfd|443": {
@@ -1004,6 +1130,9 @@
  "tuyiuoyuthgfdbf.localip.ir|2087": {
   "gemini": false
  },
+ "uae.unixzone.us|22573": {
+  "gemini": false
+ },
  "uk2-2.998998.best|443": {
   "gemini": false
  },
@@ -1011,6 +1140,12 @@
   "gemini": false
  },
  "us5-1.998998.best|443": {
+  "gemini": false
+ },
+ "uspanel.unixzone.us|30016": {
+  "gemini": false
+ },
+ "v2ray.simspeedup.com|80": {
   "gemini": false
  },
  "vah4urdzl3jdx5r2.v.3dns.vip|443": {
