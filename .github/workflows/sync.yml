@@ -1,0 +1,77 @@
+name: Sync text file from upstream
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"   # every 30 min (at :07 and :37 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      # One source per line. To add another source, add a new line.
+      SOURCE_URLS: |
+        https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt
+        https://github.com/R3ZARAHIMI/tg-v2ray-configs-every2h/raw/refs/heads/main/Original-Configs.txt
+        https://github.com/roosterkid/openproxylist/raw/refs/heads/main/V2RAY_RAW.txt
+      TARGET_FILE: verified.txt
+      SECOND_FILE: pfs_servers.txt
+      NAMES_FILE: names.json   # remembers which name each server got
+
+    steps:
+      - name: Check out your repo
+        uses: actions/checkout@v4
+
+      - name: Download the sources
+        run: |
+          ok=0
+          while IFS= read -r url; do
+            [ -z "$url" ] && continue
+            # Try up to 3 more times if a download fails
+            if curl -fsSL --retry 3 --retry-delay 5 --retry-all-errors --max-time 60 \
+                 "$url" -o "$RUNNER_TEMP/current.txt"; then
+              cat "$RUNNER_TEMP/current.txt" >> "$RUNNER_TEMP/all.txt"
+              echo >> "$RUNNER_TEMP/all.txt"
+              ok=$((ok + 1))
+            else
+              echo "::warning::Could not download $url - skipping it."
+            fi
+          done <<< "$SOURCE_URLS"
+
+          # Only fail if every source is down
+          if [ "$ok" -eq 0 ]; then
+            echo "All sources failed; aborting." >&2
+            exit 1
+          fi
+
+      - name: Merge and name the servers
+        run: |
+          python3 scripts/merge.py "$RUNNER_TEMP/all.txt" > "$RUNNER_TEMP/merged.txt"
+
+          if [ ! -s "$RUNNER_TEMP/merged.txt" ]; then
+            echo "Merged result is empty; aborting." >&2
+            exit 1
+          fi
+
+          python3 scripts/rename.py "$RUNNER_TEMP/merged.txt" "$NAMES_FILE" \
+            "$RUNNER_TEMP/names.json" > "$RUNNER_TEMP/named.txt"
+
+          # Only now touch the repo files, so a failure above changes nothing
+          cp "$RUNNER_TEMP/named.txt" "$TARGET_FILE"
+          cp "$TARGET_FILE" "$SECOND_FILE"
+          cp "$RUNNER_TEMP/names.json" "$NAMES_FILE"
+
+      - name: Commit and push if the files changed
+        run: |
+          if [ -n "$(git status --porcelain -- "$TARGET_FILE" "$SECOND_FILE" "$NAMES_FILE")" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add "$TARGET_FILE" "$SECOND_FILE" "$NAMES_FILE"
+            git commit -m "Sync $TARGET_FILE from upstream"
+            git push
+          else
+            echo "No changes upstream."
+          fi
