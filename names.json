@@ -39,6 +39,10 @@
   "last_seen": "2026-10-20",
   "name": "Foxtrot-Papa-M10-D20"
  },
+ "103.167.234.179|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Juliett-M10-D20"
+ },
  "103.172.197.2|29172": {
   "last_seen": "2026-10-19",
   "name": "Kilo-Lima-M10-D18"
@@ -111,6 +115,10 @@
   "last_seen": "2026-10-19",
   "name": "Oscar-Victor-M10-D18"
  },
+ "104.18.43.174|443": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Oscar-M10-D20"
+ },
  "104.19.154.200|443": {
   "last_seen": "2026-10-20",
   "name": "Romeo-M10-D20"
@@ -172,12 +180,16 @@
   "name": "Xray-Oscar-M10-D18"
  },
  "104.26.12.227|2096": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Bravo-Victor-M10-D19"
  },
  "104.26.14.229|443": {
   "last_seen": "2026-10-18",
   "name": "Uniform-Quebec-M10-D18"
+ },
+ "104.46.14.31|443": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Golf-M10-D20"
  },
  "107.181.151.241|443": {
   "last_seen": "2026-10-18",
@@ -227,6 +239,10 @@
   "last_seen": "2026-10-19",
   "name": "Golf-Xray-M10-D19"
  },
+ "13.135.139.238|22223": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Juliett-M10-D20"
+ },
  "13.135.17.74|22222": {
   "last_seen": "2026-10-18",
   "name": "Mike-Lima-M10-D18"
@@ -250,6 +266,14 @@
  "13.140.81.46|8080": {
   "last_seen": "2026-10-18",
   "name": "Uniform-Xray-M10-D18"
+ },
+ "13.140.89.208|80": {
+  "last_seen": "2026-10-20",
+  "name": "India-Zulu-M10-D20"
+ },
+ "13.140.89.57|8080": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-India-M10-D20"
  },
  "13.140.91.117|11128": {
   "last_seen": "2026-10-18",
@@ -275,9 +299,17 @@
   "last_seen": "2026-10-19",
   "name": "Hotel-Charlie-M10-D19"
  },
+ "13.140.92.21|80": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Alpha-M10-D20"
+ },
  "13.143.162.138|8443": {
   "last_seen": "2026-10-20",
   "name": "Delta-Foxtrot-M10-D20"
+ },
+ "13.143.182.175|443": {
+  "last_seen": "2026-10-20",
+  "name": "India-Uniform-M10-D20"
  },
  "13.37.116.116|22222": {
   "last_seen": "2026-10-19",
@@ -379,6 +411,10 @@
   "last_seen": "2026-10-19",
   "name": "Hotel-Uniform-M10-D19"
  },
+ "140.225.199.246|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Papa-M10-D20"
+ },
  "140.82.56.38|8388": {
   "last_seen": "2026-10-20",
   "name": "Echo-Xray-M10-D20"
@@ -435,6 +471,10 @@
   "last_seen": "2026-10-18",
   "name": "Echo-Mike-M10-D18"
  },
+ "144.31.99.252|443": {
+  "last_seen": "2026-10-20",
+  "name": "India-Whiskey-M10-D20"
+ },
  "145.239.55.210|80": {
   "last_seen": "2026-10-20",
   "name": "Whiskey-Bravo-M10-D18"
@@ -476,7 +516,7 @@
   "name": "India-Kilo-M10-D20"
  },
  "147.45.60.160|8444": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Quebec-M10-D18"
  },
  "147.45.61.213|443": {
@@ -567,6 +607,10 @@
   "last_seen": "2026-10-20",
   "name": "Sierra-M10-D20"
  },
+ "150.40.126.21|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Zulu-M10-D20"
+ },
  "151.101.36.99|443": {
   "last_seen": "2026-10-18",
   "name": "Sierra-Victor-M10-D18"
@@ -574,6 +618,10 @@
  "151.101.38.6|443": {
   "last_seen": "2026-10-19",
   "name": "Golf-Bravo-M10-D18"
+ },
+ "151.123.187.198|443": {
+  "last_seen": "2026-10-20",
+  "name": "India-Yankee-M10-D20"
  },
  "152.228.139.33|35108": {
   "last_seen": "2026-10-20",
@@ -679,6 +727,10 @@
   "last_seen": "2026-10-18",
   "name": "Kilo-Zulu-M10-D18"
  },
+ "157.230.101.36|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Alpha-M10-D20"
+ },
  "158.173.20.171|443": {
   "last_seen": "2026-10-20",
   "name": "Charlie-November-M10-D20"
@@ -720,7 +772,7 @@
   "name": "Oscar-Whiskey-M10-D18"
  },
  "161.97.160.224|443": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Delta-Bravo-M10-D19"
  },
  "162.120.94.30|8880": {
@@ -879,9 +931,17 @@
   "last_seen": "2026-10-18",
   "name": "Whiskey-Kilo-M10-D18"
  },
+ "172.64.154.8|2052": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Quebec-M10-D20"
+ },
  "172.64.156.60|443": {
   "last_seen": "2026-10-20",
   "name": "Golf-India-M10-D20"
+ },
+ "172.64.229.170|80": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Bravo-M10-D20"
  },
  "172.65.90.53|8880": {
   "last_seen": "2026-10-18",
@@ -892,7 +952,7 @@
   "name": "Hotel-Whiskey-M10-D20"
  },
  "172.66.203.67|443": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Romeo-Echo-M10-D18"
  },
  "172.67.137.209|443": {
@@ -904,7 +964,7 @@
   "name": "Alpha-Papa-M10-D19"
  },
  "172.67.155.65|2053": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Foxtrot-Romeo-M10-D18"
  },
  "172.67.155.65|8443": {
@@ -1015,9 +1075,25 @@
   "last_seen": "2026-10-20",
   "name": "Hotel-Quebec-M10-D20"
  },
+ "179.61.138.145|36264": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Tango-M10-D20"
+ },
  "179.61.145.245|443": {
   "last_seen": "2026-10-19",
   "name": "Kilo-Yankee-M10-D18"
+ },
+ "18.134.224.162|22222": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Kilo-M10-D20"
+ },
+ "18.134.224.162|22223": {
+  "last_seen": "2026-10-20",
+  "name": "India-Victor-M10-D20"
+ },
+ "18.134.224.162|22224": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Golf-M10-D20"
  },
  "18.135.18.254|22222": {
   "last_seen": "2026-10-19",
@@ -1038,6 +1114,10 @@
  "18.169.146.8|22223": {
   "last_seen": "2026-10-20",
   "name": "Echo-Foxtrot-M10-D20"
+ },
+ "18.171.196.218|22223": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Kilo-M10-D20"
  },
  "18.175.83.65|22222": {
   "last_seen": "2026-10-19",
@@ -1151,6 +1231,10 @@
   "last_seen": "2026-10-20",
   "name": "India-Romeo-M10-D18"
  },
+ "185.253.116.46|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Lima-M10-D20"
+ },
  "185.253.75.119|443": {
   "last_seen": "2026-10-20",
   "name": "Golf-Oscar-M10-D20"
@@ -1158,6 +1242,10 @@
  "185.255.179.166|443": {
   "last_seen": "2026-10-20",
   "name": "Bravo-Hotel-M10-D20"
+ },
+ "185.36.192.228|35488": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Quebec-M10-D20"
  },
  "185.86.145.128|8443": {
   "last_seen": "2026-10-18",
@@ -1222,6 +1310,10 @@
  "188.225.73.107|20005": {
   "last_seen": "2026-10-18",
   "name": "Romeo-Mike-M10-D18"
+ },
+ "188.226.181.61|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-November-M10-D20"
  },
  "188.241.241.117|443": {
   "last_seen": "2026-10-20",
@@ -1418,6 +1510,10 @@
  "198.98.53.130|443": {
   "last_seen": "2026-10-20",
   "name": "Delta-Lima-M10-D20"
+ },
+ "199.232.129.192|443": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Foxtrot-M10-D20"
  },
  "199.232.20.113|443": {
   "last_seen": "2026-10-19",
@@ -1719,6 +1815,10 @@
   "last_seen": "2026-10-18",
   "name": "Papa-November-M10-D18"
  },
+ "216.105.168.18|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Hotel-M10-D20"
+ },
  "216.173.67.59|443": {
   "last_seen": "2026-10-18",
   "name": "Sierra-Delta-M10-D18"
@@ -1814,6 +1914,10 @@
  "3.138.60.195|1102": {
   "last_seen": "2026-10-20",
   "name": "Alpha-India-M10-D20"
+ },
+ "3.150.133.71|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Romeo-M10-D20"
  },
  "3.34.131.153|443": {
   "last_seen": "2026-10-18",
@@ -1916,7 +2020,7 @@
   "name": "Zulu-Zulu-M10-D18"
  },
  "31.59.210.37|443": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "India-Yankee-M10-D18"
  },
  "31.70.111.146|443": {
@@ -1979,6 +2083,10 @@
   "last_seen": "2026-10-20",
   "name": "Golf-Quebec-M10-D20"
  },
+ "35.176.16.196|443": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Delta-M10-D20"
+ },
  "35.177.104.48|22222": {
   "last_seen": "2026-10-18",
   "name": "Mike-Juliett-M10-D18"
@@ -2026,6 +2134,14 @@
  "37.19.198.243|443": {
   "last_seen": "2026-10-18",
   "name": "Sierra-Bravo-M10-D18"
+ },
+ "37.27.150.163|2091": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Echo-M10-D20"
+ },
+ "37.27.150.163|9090": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Victor-M10-D20"
  },
  "37.32.29.14|9112": {
   "last_seen": "2026-10-20",
@@ -2216,7 +2332,7 @@
   "name": "Oscar-Zulu-M10-D18"
  },
  "46.101.196.101|2096": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Whiskey-Quebec-M10-D18"
  },
  "46.101.253.244|2083": {
@@ -2335,6 +2451,10 @@
   "last_seen": "2026-10-19",
   "name": "Charlie-M10-D19"
  },
+ "5.159.54.10|1198": {
+  "last_seen": "2026-10-20",
+  "name": "India-Xray-M10-D20"
+ },
  "5.178.109.174|14430": {
   "last_seen": "2026-10-20",
   "name": "India-Papa-M10-D18"
@@ -2366,6 +2486,10 @@
  "5.45.97.147|10803": {
   "last_seen": "2026-10-18",
   "name": "Golf-Juliett-M10-D18"
+ },
+ "50.7.43.117|443": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Hotel-M10-D20"
  },
  "51.158.206.20|23576": {
   "last_seen": "2026-10-19",
@@ -2462,6 +2586,18 @@
  "51.44.146.230|22224": {
   "last_seen": "2026-10-18",
   "name": "Romeo-Uniform-M10-D18"
+ },
+ "51.44.147.45|22223": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Lima-M10-D20"
+ },
+ "51.44.147.45|22224": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Mike-M10-D20"
+ },
+ "51.44.187.221|22223": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-November-M10-D20"
  },
  "51.44.197.117|22222": {
   "last_seen": "2026-10-19",
@@ -2631,6 +2767,10 @@
   "last_seen": "2026-10-20",
   "name": "Alpha-Foxtrot-M10-D20"
  },
+ "62.210.26.134|12571": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Romeo-M10-D20"
+ },
  "62.210.91.10|23576": {
   "last_seen": "2026-10-19",
   "name": "Foxtrot-M10-D19"
@@ -2687,6 +2827,10 @@
   "last_seen": "2026-10-20",
   "name": "Lima-Foxtrot-M10-D18"
  },
+ "65.109.188.155|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Xray-M10-D20"
+ },
  "65.109.28.164|443": {
   "last_seen": "2026-10-20",
   "name": "Echo-Tango-M10-D20"
@@ -2706,6 +2850,10 @@
  "66.70.179.198|2053": {
   "last_seen": "2026-10-19",
   "name": "Mike-Uniform-M10-D18"
+ },
+ "66.90.106.228|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Foxtrot-M10-D20"
  },
  "668ec0d9f20dd0b5.qe.php.rest|443": {
   "last_seen": "2026-10-18",
@@ -2836,12 +2984,16 @@
   "name": "Yankee-Kilo-M10-D18"
  },
  "80.240.18.227|10051": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Hotel-Alpha-M10-D19"
  },
  "80.243.228.51|2085": {
   "last_seen": "2026-10-18",
   "name": "Delta-India-M10-D18"
+ },
+ "807879f465ae1aa6.tunvi.w-ert.org|32093": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Oscar-M10-D20"
  },
  "82.110.60.9|19999": {
   "last_seen": "2026-10-20",
@@ -2962,6 +3114,10 @@
  "82.38.31.213|8080": {
   "last_seen": "2026-10-20",
   "name": "Delta-Sierra-M10-D20"
+ },
+ "82.38.31.217|8080": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Delta-M10-D20"
  },
  "82.38.31.218|8080": {
   "last_seen": "2026-10-20",
@@ -3095,6 +3251,10 @@
   "last_seen": "2026-10-18",
   "name": "Whiskey-M10-D18"
  },
+ "89.127.210.40|443": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Charlie-M10-D20"
+ },
  "89.35.14.30|443": {
   "last_seen": "2026-10-20",
   "name": "Alpha-Delta-M10-D20"
@@ -3123,12 +3283,16 @@
   "last_seen": "2026-10-19",
   "name": "India-Tango-M10-D19"
  },
+ "91.107.180.141|443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Yankee-M10-D20"
+ },
  "91.107.180.254|1080": {
   "last_seen": "2026-10-20",
   "name": "Alpha-Juliett-M10-D20"
  },
  "91.107.191.188|8443": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Uniform-Zulu-M10-D18"
  },
  "91.193.58.117|443": {
@@ -3374,6 +3538,10 @@
  "ce1fc2d8.krkt.hkssip.com|49642": {
   "last_seen": "2026-10-19",
   "name": "Uniform-Kilo-M10-D18"
+ },
+ "ce2a235202f0.salzivo.ir|443": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-India-M10-D20"
  },
  "central-jawfish.rooster465.autos|443": {
   "last_seen": "2026-10-18",
@@ -3839,6 +4007,10 @@
   "last_seen": "2026-10-18",
   "name": "Bravo-Echo-M10-D18"
  },
+ "geri-1.povrak.ir|443": {
+  "last_seen": "2026-10-20",
+  "name": "India-Tango-M10-D20"
+ },
  "german2.vokral.ir|26267": {
   "last_seen": "2026-10-20",
   "name": "Foxtrot-Victor-M10-D20"
@@ -3846,6 +4018,14 @@
  "german2.vokral.ir|8082": {
   "last_seen": "2026-10-20",
   "name": "Golf-Alpha-M10-D20"
+ },
+ "germanthere.authortycenter.com|1090": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Mike-M10-D20"
+ },
+ "germantwo.authortycenter.com|1090": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Echo-M10-D20"
  },
  "ghff.amin0087.ir|443": {
   "last_seen": "2026-10-18",
@@ -4012,7 +4192,7 @@
   "name": "Tango-Papa-M10-D18"
  },
  "kala.fortresshost.ir|443": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Victor-November-M10-D18"
  },
  "kaveh4.gofuc7f.ir|2087": {
@@ -4400,7 +4580,7 @@
   "name": "Tango-Sierra-M10-D18"
  },
  "proxy_online_net\",\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"\",\"type\":\"none\",\"v\":\"2\",\"vcn\"|\"\"}": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-20",
   "name": "Zulu-Xray-M10-D18"
  },
  "proxymtalpha🏣 4\",\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"\",\"type\":\"none\",\"v\"|\"2\"}": {
@@ -4524,7 +4704,7 @@
   "name": "India-Juliett-M10-D20"
  },
  "server.slavkiti.monster|443": {
-  "last_seen": "2026-10-18",
+  "last_seen": "2026-10-20",
   "name": "Yankee-Whiskey-M10-D18"
  },
  "server16.peekconfig.workers.dev|443": {
@@ -4559,6 +4739,10 @@
   "last_seen": "2026-10-19",
   "name": "Bravo-Lima-M10-D19"
  },
+ "sm.novexora.ir|2096": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Whiskey-M10-D20"
+ },
  "sosk.sorix-home.ir|60231": {
   "last_seen": "2026-10-20",
   "name": "Bravo-Papa-M10-D18"
@@ -4586,6 +4770,10 @@
  "ss3.soreanapanel.com|8080": {
   "last_seen": "2026-10-20",
   "name": "Hotel-November-M10-D19"
+ },
+ "static.228.137.108.65.clients.your-server.de|443": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Bravo-M10-D20"
  },
  "sub.merky.top|443": {
   "last_seen": "2026-10-19",
@@ -4615,9 +4803,17 @@
   "last_seen": "2026-10-20",
   "name": "India-Alpha-M10-D18"
  },
+ "swedn.firzav.ir|8443": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Uniform-M10-D20"
+ },
  "t14.qifei.app|443": {
   "last_seen": "2026-10-18",
   "name": "Juliett-Tango-M10-D18"
+ },
+ "t3.janebi913.ir|9093": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Sierra-M10-D20"
  },
  "t5.qifei.app|443": {
   "last_seen": "2026-10-18",
@@ -4718,6 +4914,10 @@
  "tun2.w-ert.org|450": {
   "last_seen": "2026-10-18",
   "name": "Alpha-Kilo-M10-D18"
+ },
+ "tun2.w-ert.org|56841": {
+  "last_seen": "2026-10-20",
+  "name": "Juliett-Charlie-M10-D20"
  },
  "tun7.momasvps.ir|7018": {
   "last_seen": "2026-10-20",
@@ -4914,6 +5114,10 @@
  "www.iplocation.net|8080": {
   "last_seen": "2026-10-18",
   "name": "Bravo-Kilo-M10-D18"
+ },
+ "www.pleadcourt.org|443": {
+  "last_seen": "2026-10-20",
+  "name": "Kilo-Papa-M10-D20"
  },
  "www.speedtest.net|443": {
   "last_seen": "2026-10-20",
