@@ -14,9 +14,11 @@ jobs:
     env:
       # One source per line. To add another source, add a new line.
       SOURCE_URLS: |
-        https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt
-        https://github.com/R3ZARAHIMI/tg-v2ray-configs-every2h/raw/refs/heads/main/Original-Configs.txt
+        https://github.com/miladtahanian/V2RayCFGDumper/raw/refs/heads/main/sub.txt
+        https://github.com/iampedii/whitedns-sub/raw/refs/heads/main/base64.txt
+        https://github.com/Au1rxx/free-vpn-subscriptions/raw/refs/heads/main/output/v2ray-base64.txt
         https://github.com/roosterkid/openproxylist/raw/refs/heads/main/V2RAY_RAW.txt
+        https://github.com/MahanKenway/Freedom-V2Ray/raw/refs/heads/main/configs/vless.txt
       TARGET_FILE: verified.txt
       SECOND_FILE: pfs_servers.txt
       NAMES_FILE: names.json   # remembers which name each server got
