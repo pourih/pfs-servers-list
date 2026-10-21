@@ -79,6 +79,10 @@
   "last_seen": "2026-10-18",
   "name": "Delta-Hotel-M10-D18"
  },
+ "104.16.10.100|443": {
+  "last_seen": "2026-10-21",
+  "name": "Delta-Papa-M10-D21"
+ },
  "104.16.174.81|8443": {
   "last_seen": "2026-10-21",
   "name": "Bravo-Foxtrot-M10-D21"
@@ -556,7 +560,7 @@
   "name": "November-Foxtrot-M10-D18"
  },
  "144.31.215.162|443": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Delta-Uniform-M10-D18"
  },
  "144.31.216.24|443": {
@@ -620,7 +624,7 @@
   "name": "Delta-Mike-M10-D18"
  },
  "146.75.59.189|443": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "India-Kilo-M10-D20"
  },
  "147.182.183.207|443": {
@@ -628,7 +632,7 @@
   "name": "Delta-Foxtrot-M10-D21"
  },
  "147.45.60.160|8444": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Quebec-M10-D18"
  },
  "147.45.61.213|443": {
@@ -1256,11 +1260,11 @@
   "name": "Quebec-November-M10-D18"
  },
  "178.94.25.73|14430": {
-  "last_seen": "2026-10-19",
+  "last_seen": "2026-10-21",
   "name": "Mike-Tango-M10-D18"
  },
  "179.43.170.84|443": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Hotel-Quebec-M10-D20"
  },
  "179.61.138.145|36264": {
@@ -1432,7 +1436,7 @@
   "name": "India-Zulu-M10-D18"
  },
  "185.243.99.100|1222": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Papa-Oscar-M10-D18"
  },
  "185.253.116.33|14430": {
@@ -1752,7 +1756,7 @@
   "name": "Delta-Lima-M10-D20"
  },
  "199.232.129.192|443": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Kilo-Foxtrot-M10-D20"
  },
  "199.232.20.113|443": {
@@ -1770,6 +1774,14 @@
  "199.232.239.239|443": {
   "last_seen": "2026-10-21",
   "name": "Echo-Yankee-M10-D18"
+ },
+ "199.232.78.151|443": {
+  "last_seen": "2026-10-21",
+  "name": "Delta-Romeo-M10-D21"
+ },
+ "199.232.78.152|443": {
+  "last_seen": "2026-10-21",
+  "name": "Delta-Sierra-M10-D21"
  },
  "199.232.78.159|443": {
   "last_seen": "2026-10-21",
@@ -1904,7 +1916,7 @@
   "name": "Charlie-Romeo-M10-D20"
  },
  "202.50.253.36|19999": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Charlie-Kilo-M10-D20"
  },
  "202.50.253.45|1999": {
@@ -1928,7 +1940,7 @@
   "name": "Bravo-Victor-M10-D20"
  },
  "202.50.253.81|19999": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Bravo-Xray-M10-D20"
  },
  "202.50.253.90|19999": {
@@ -1996,7 +2008,7 @@
   "name": "Romeo-Charlie-M10-D18"
  },
  "209.38.225.64|443": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Alpha-Sierra-M10-D18"
  },
  "209.38.37.132|443": {
@@ -2524,7 +2536,7 @@
   "name": "Bravo-Kilo-M10-D19"
  },
  "45.128.60.127|443": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Golf-Whiskey-M10-D19"
  },
  "45.130.125.160|443": {
@@ -2624,7 +2636,7 @@
   "name": "Hotel-Romeo-M10-D20"
  },
  "46.101.110.34|443": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Hotel-Delta-M10-D18"
  },
  "46.101.143.59|443": {
@@ -2806,6 +2818,10 @@
  "51.158.206.80|23576": {
   "last_seen": "2026-10-21",
   "name": "Alpha-Kilo-M10-D21"
+ },
+ "51.158.206.97|23576": {
+  "last_seen": "2026-10-21",
+  "name": "Delta-Quebec-M10-D21"
  },
  "51.158.206.98|23576": {
   "last_seen": "2026-10-18",
@@ -4736,7 +4752,7 @@
   "name": "Echo-Charlie-M10-D18"
  },
  "md2.univesalsrv.com|443": {
-  "last_seen": "2026-10-18",
+  "last_seen": "2026-10-21",
   "name": "Yankee-Uniform-M10-D18"
  },
  "meliproxy\",\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"\",\"type\":\"---\",\"v\":\"2\",\"vcn\"|\"\"}": {
@@ -5024,7 +5040,7 @@
   "name": "Hotel-Hotel-M10-D18"
  },
  "platform118.golnamakcert.top|80": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "Hotel-Echo-M10-D18"
  },
  "pp-fx2.firelinkservers.ir|443": {
@@ -5212,7 +5228,7 @@
   "name": "Charlie-Charlie-M10-D19"
  },
  "shortbig.ir|443": {
-  "last_seen": "2026-10-20",
+  "last_seen": "2026-10-21",
   "name": "India-India-M10-D20"
  },
  "simple-molly.rooster465.autos|443": {
@@ -5362,6 +5378,10 @@
  "test.wolf-moose.test-cdn-kkk.com|443": {
   "last_seen": "2026-10-20",
   "name": "Hotel-Uniform-M10-D20"
+ },
+ "tg.riotvpn.eu|443": {
+  "last_seen": "2026-10-21",
+  "name": "Delta-Tango-M10-D21"
  },
  "tg1.cdnphotos.org|443": {
   "last_seen": "2026-10-21",
