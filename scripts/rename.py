@@ -27,8 +27,8 @@ def word_parts():
         n += 1
 
 
-def new_name(used, today):
-    for words in word_parts():
+def new_name(words_iter, used, today):
+    for words in words_iter:
         name = "%s-M%02d-D%02d" % (words, today.month, today.day)
         if name not in used:
             return name
@@ -39,7 +39,7 @@ def set_remark(line, name):
     scheme, _, rest = line.partition("://")
     if scheme.lower() == "vmess":
         body = rest.split("#")[0]
-        j = json.loads(base64.b64decode(pad(body)))
+        j = json.loads(base64.urlsafe_b64decode(pad(body)))
         j["ps"] = name
         raw = json.dumps(j, ensure_ascii=False).encode("utf-8")
         return scheme + "://" + base64.b64encode(raw).decode()
@@ -57,6 +57,7 @@ def main():
         with open(old_file, encoding="utf-8") as f:
             records = {k: v for k, v in json.load(f).items() if v["last_seen"] >= cutoff}
     used = {v["name"] for v in records.values()}
+    words_iter = word_parts()
 
     with open(merged_file, encoding="utf-8", errors="replace") as f:
         for line in f:
@@ -68,7 +69,7 @@ def main():
                 print(line)
                 continue
             node = "%s|%s" % (k[1], k[2])
-            name = records[node]["name"] if node in records else new_name(used, today)
+            name = records[node]["name"] if node in records else new_name(words_iter, used, today)
             try:
                 print(set_remark(line, name))
             except Exception:
