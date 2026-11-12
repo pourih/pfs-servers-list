@@ -20,7 +20,6 @@ jobs:
       SOURCE_URLS: |
         https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/main/sub.txt
         https://raw.githubusercontent.com/iampedii/whitedns-sub/main/base64.txt
-        https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt
         https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt
       # One target file per line. All listed files receive identical content.
       TARGET_FILES: |
