@@ -18,9 +18,9 @@ jobs:
     env:
       # One source per line. To add another source, add a new line.
       SOURCE_URLS: |
-        https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/main/sub.txt
-        https://raw.githubusercontent.com/iampedii/whitedns-sub/main/base64.txt
-        https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt
+        https://raw.githubusercontent.com/ThomasJasperthecat/sub/refs/heads/main/sublist1.txt
+        https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/refs/heads/master/all
+        https://raw.githubusercontent.com/sinavm/SVM/refs/heads/main/subscriptions/xray/base64/mix
       # One target file per line. All listed files receive identical content.
       TARGET_FILES: |
         verified.txt
